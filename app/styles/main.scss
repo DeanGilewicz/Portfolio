@@ -4,6 +4,7 @@ body {
   background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
+  font-size: 62.5%;
 }
 
 .header-container {
@@ -11,6 +12,9 @@ body {
   width: 100%;
   text-align: center;
   ul {
+    padding: 0px;
+    margin: 0 auto;
+    font-size: 2em;
     border: 1px solid red;
     background-color: gray;
     li {
@@ -20,24 +24,75 @@ body {
     }
   }
   .name {
+    font-size: 3em;
     border: 1px solid red;
-    clear: both;
+    h1 {
+      margin: 20px 0px 10px 0px;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+    p {
+      margin: 0px 0px 20px 0px;
+    }
   }
 }
 
 .main-container {
   margin: 0 auto;
-  width: 600px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
+  padding: 20px 50px 20px 50px;
+  text-align: center;
+  .about {
+    border: 1px solid red;
+    font-size: 1.8em;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: pink;
+  }
+  .skills {
+    border: 1px solid red;
+    font-size: 1.8em;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: red;
+    ul {
+      padding: 0px;
+    }
+    li {
+      list-style-type: none;
+    }
+  }
+  .work {
+    border: 1px solid red;
+    font-size: 1.8em;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: green;
+    ul {
+      padding: 0px;
+    }
+    li {
+      list-style-type: none;
+    }
+  }
+  .experiences {
+    border: 1px solid red;
+    font-size: 1.8em;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: blue;
+  }
+  .contact {
+    border: 1px solid red;
+    font-size: 1.8em;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: yellow;
+    ul {
+      padding: 0px;
+    }
+    li {
+      list-style-type: none;
+    }
   }
 }
 
