@@ -1,6 +1,6 @@
 ## Portfolio
 
-My portfolio site
+My reposonsive designed portfolio site
 
 Libraries
 
