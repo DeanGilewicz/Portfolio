@@ -10,7 +10,7 @@ body {
   border: 1px solid red;
   width: 100%;
   text-align: center;
-  nav {
+  ul {
     border: 1px solid red;
     background-color: gray;
     li {
@@ -26,7 +26,7 @@ body {
 }
 
 .main-container {
-  margin: 50px auto 0 auto;
+  margin: 0 auto;
   width: 600px;
   font-size: 18px;
   font-weight: 200;
@@ -38,5 +38,20 @@ body {
     font-size: 60px;
     line-height: 1;
     letter-spacing: -1px;
+  }
+}
+
+.footer-container {
+  border: 1px solid red;
+  width: 100%;
+  text-align: center;
+  ul {
+    border: 1px solid red;
+    background-color: gray;
+    li {
+      list-style-type: none;
+      display: inline-block;
+      border: 1px solid red;
+    }
   }
 }
