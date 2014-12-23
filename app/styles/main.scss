@@ -49,6 +49,7 @@ body {
     background-color: pink;
   }
   .skills {
+    overflow: auto;
     border: 1px solid red;
     font-size: 1.8em;
     font-weight: 200;
@@ -59,9 +60,16 @@ body {
     }
     li {
       list-style-type: none;
+      float: left;
+      width: 20%;
+      height: 150px;
+      &:nth-child(2n) {
+        background-color: white;
+      }
     }
   }
   .work {
+    clear: both;
     border: 1px solid red;
     font-size: 1.8em;
     font-weight: 200;
@@ -101,6 +109,8 @@ body {
   width: 100%;
   text-align: center;
   ul {
+    padding: 0px;
+    margin: 0 auto;
     border: 1px solid red;
     background-color: gray;
     li {
