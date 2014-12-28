@@ -24,20 +24,30 @@ body {
     }
   }
   .name {
-    font-size: 3em;
+    font-size: 3.5em;
     border: 1px solid red;
+    img {
+      float: left;
+      width: 160px;
+    }
     h1 {
       margin: 20px 0px 10px 0px;
       line-height: 1;
       letter-spacing: -1px;
+      text-align: left;
+      span {
+        display: block;
+      }
     }
     p {
-      margin: 0px 0px 20px 0px;
+      text-align: left;
+      margin: 0px;
     }
   }
 }
 
 .main-container {
+  clear: both;
   margin: 0 auto;
   padding: 20px 50px 20px 50px;
   text-align: center;
