@@ -23,113 +23,134 @@ body {
       border: 1px solid red;
     }
   }
-  .name-container {
-    overflow: auto;
-    font-size: 3.5em;
-    border: 1px solid red;
-    margin: 0 auto;
+}
+.name-container {
+  overflow: auto;
+  font-size: 3.5em;
+  border: 1px solid red;
+  margin: 0 auto;
+  width: 38%;
+  .name-pic {
+    float: left;
     width: 40%;
-    .namePic {
-      float: left;
-      width: 40%;
-      border: 1px solid blue;
-      img {
-        width: 100%;
+    border: 1px solid blue;
+    img {
+      width: 100%;
+    }
+  }
+  .name-text {
+    float: left;
+    width: 59%;
+    padding-top: 30px;
+    border: 1px solid green;
+    h1 {
+      margin: 20px 0px 10px 0px;
+      line-height: 1;
+      letter-spacing: -1px;
+      text-align: left;
+      span {
+        display: block;
       }
     }
-    .nameText {
-      float: left;
-      width: 55%;
-      padding-top: 30px;
-      border: 1px solid green;
-      h1 {
-        margin: 20px 0px 10px 0px;
-        line-height: 1;
-        letter-spacing: -1px;
-        text-align: left;
-        span {
-          display: block;
-        }
-      }
-      p {
-        text-align: left;
-        margin: 0px;
-        font-size: 1.2em;
-      }
+    p {
+      text-align: left;
+      margin: 0px;
+      font-size: 1.2em;
     }
   }
 }
-
-.main-container {
+.about-container {
   clear: both;
-  margin: 0 auto;
-  padding: 20px 50px 20px 50px;
+  overflow: auto;
+  width: 100%;
   text-align: center;
-  .about {
+  border: 1px solid blue;
+  .my-story {
     border: 1px solid red;
+    float: left;
+    width: 50%;
+    margin-left: 1%;
     font-size: 1.8em;
     font-weight: 200;
     line-height: 30px;
     background-color: pink;
   }
-  .skills {
-    overflow: auto;
+  .my-motivation {
     border: 1px solid red;
+    float: left;
+    width: 45%;
     font-size: 1.8em;
     font-weight: 200;
     line-height: 30px;
-    background-color: red;
-    ul {
-      padding: 0px;
-    }
-    li {
-      list-style-type: none;
-      float: left;
-      width: 20%;
-      height: 150px;
-      &:nth-child(2n) {
-        background-color: white;
-      }
+    background-color: pink;
+  }
+  .my-experiences {
+    border: 1px solid red;
+    float: left;
+    width: 45%;
+    font-size: 1.8em;
+    font-weight: 200;
+    line-height: 30px;
+    background-color: pink;
+  }
+}
+.skills {
+  overflow: auto;
+  border: 1px solid red;
+  font-size: 1.8em;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: red;
+  ul {
+    padding: 0px;
+  }
+  li {
+    list-style-type: none;
+    float: left;
+    width: 20%;
+    height: 150px;
+    &:nth-child(2n) {
+      background-color: white;
     }
   }
-  .work {
-    clear: both;
-    border: 1px solid red;
-    font-size: 1.8em;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: lightgreen;
-    ul {
-      padding: 0px;
-    }
-    li {
-      list-style-type: none;
-      width: 100%;
-      height: 150px;
-      &:nth-child(2n) {
-        background-color: darkgreen;
-      }
+}
+.work {
+  clear: both;
+  border: 1px solid red;
+  font-size: 1.8em;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: lightgreen;
+  ul {
+    padding: 0px;
+  }
+  li {
+    list-style-type: none;
+    width: 100%;
+    height: 150px;
+    &:nth-child(2n) {
+      background-color: darkgreen;
     }
   }
-  .experiences {
-    border: 1px solid red;
-    font-size: 1.8em;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: blue;
+}
+.experiences {
+  border: 1px solid red;
+  font-size: 1.8em;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: blue;
+}
+.contact {
+  border: 1px solid red;
+  font-size: 1.8em;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: yellow;
+  ul {
+    padding: 0px;
   }
-  .contact {
-    border: 1px solid red;
-    font-size: 1.8em;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: yellow;
-    ul {
-      padding: 0px;
-    }
-    li {
-      list-style-type: none;
-    }
+  li {
+    list-style-type: none;
   }
 }
 
