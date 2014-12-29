@@ -117,36 +117,20 @@ body {
 }
 .work-container {
   clear: both;
+  text-align: center;
   border: 1px solid red;
   font-size: 1.8em;
   font-weight: 200;
   line-height: 30px;
-  div {
-    background-color: black;
-    opacity: 0.5;
-  }
 }
-.resume {
+.contact-container {
+  clear: both;
+  text-align: center;
   border: 1px solid red;
   font-size: 1.8em;
   font-weight: 200;
   line-height: 30px;
-  background-color: blue;
 }
-.contact {
-  border: 1px solid red;
-  font-size: 1.8em;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: yellow;
-  ul {
-    padding: 0px;
-  }
-  li {
-    list-style-type: none;
-  }
-}
-
 .footer-container {
   border: 1px solid red;
   width: 100%;
