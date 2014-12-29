@@ -47,10 +47,10 @@ body {
   .name-text {
     float: left;
     width: 59%;
-    padding: 30px 0px 20px 0px;
+    padding: 30px 0px 30px 0px;
     border: 1px solid green;
     h1 {
-      margin: 20px 0px 10px 0px;
+      margin: 20px 0px 20px 0px;
       line-height: 1;
       letter-spacing: -1px;
       text-align: left;
@@ -62,13 +62,6 @@ body {
       text-align: left;
       margin: 0px;
       font-size: 1.2em;
-      &:nth-child(5) {
-        margin-top: 15px;
-      }
-      &:nth-child(5),
-      &:last-child {
-        font-size: 1em;
-      }
     }
   }
 }
@@ -128,17 +121,9 @@ body {
   font-size: 1.8em;
   font-weight: 200;
   line-height: 30px;
-  background-color: lightgreen;
-  ul {
-    padding: 0px;
-  }
-  li {
-    list-style-type: none;
-    width: 100%;
-    height: 150px;
-    &:nth-child(2n) {
-      background-color: darkgreen;
-    }
+  div {
+    background-color: black;
+    opacity: 0.5;
   }
 }
 .resume {
