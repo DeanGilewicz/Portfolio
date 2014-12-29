@@ -110,18 +110,19 @@ body {
   font-size: 1.8em;
   font-weight: 200;
   line-height: 30px;
-  background-color: red;
+  text-align: center;
+  background-color: #fff;
+  img {
+    width: 65%;
+  }
   ul {
     padding: 0px;
+    border: 1px solid red;
+    margin: 0 auto;
+    width: 30%;
   }
   li {
     list-style-type: none;
-    float: left;
-    width: 20%;
-    height: 150px;
-    &:nth-child(2n) {
-      background-color: white;
-    }
   }
 }
 .work {
