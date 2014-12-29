@@ -1,7 +1,7 @@
 
 // Custom Styles
 body {
-  background: #fafafa;
+  background: #7A8A8C;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
   font-size: 62.5%;
@@ -9,6 +9,7 @@ body {
 
 .header-container {
   border: 1px solid red;
+  margin: 0px 0px 30px 0px;
   width: 100%;
   text-align: center;
   ul {
@@ -16,11 +17,16 @@ body {
     margin: 0 auto;
     font-size: 2em;
     border: 1px solid red;
-    background-color: gray;
     li {
       list-style-type: none;
       display: inline-block;
       border: 1px solid red;
+      margin: 0% 4% 0% 4%;
+      color: white;
+      cursor: pointer;
+      &:hover {
+        color: #9CEEFF;
+      }
     }
   }
 }
@@ -29,7 +35,7 @@ body {
   font-size: 3.5em;
   border: 1px solid red;
   margin: 0 auto;
-  width: 38%;
+  width: 45%;
   .name-pic {
     float: left;
     width: 40%;
@@ -65,6 +71,10 @@ body {
   width: 100%;
   text-align: center;
   border: 1px solid blue;
+  background-color: #5F9CA6;
+  h2 {
+    font-size: 3em;
+  }
   .my-story {
     border: 1px solid red;
     float: left;
@@ -73,7 +83,7 @@ body {
     font-size: 1.8em;
     font-weight: 200;
     line-height: 30px;
-    background-color: pink;
+    background-color: white;
   }
   .my-motivation {
     border: 1px solid red;
@@ -82,7 +92,7 @@ body {
     font-size: 1.8em;
     font-weight: 200;
     line-height: 30px;
-    background-color: pink;
+    background-color: white;
   }
   .my-experiences {
     border: 1px solid red;
@@ -91,7 +101,7 @@ body {
     font-size: 1.8em;
     font-weight: 200;
     line-height: 30px;
-    background-color: pink;
+    background-color: white;
   }
 }
 .skills {
