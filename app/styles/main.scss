@@ -124,12 +124,49 @@ body {
   line-height: 30px;
 }
 .contact-container {
-  clear: both;
+  width: 100%;
   text-align: center;
   border: 1px solid red;
   font-size: 1.8em;
   font-weight: 200;
   line-height: 30px;
+  .tablet {
+    border: 1px solid red;
+    width: 16%;
+    min-height: 300px;
+    display: inline-block;
+    vertical-align: bottom;
+    background-image: url('../images/tablet.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .desktop {
+    border: 1px solid red;
+    width: 45%;
+    min-height: 500px;
+    display: inline-block;
+    vertical-align: bottom;
+    background-image: url('../images/desktop.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 0px 50px 0px 50px;
+    ul {
+      padding: 0px;
+    }
+    li {
+      list-style-type: none;
+    }
+  }
+  .smartphone {
+    border: 1px solid red;
+    width: 16%;
+    min-height: 230px;
+    display: inline-block;
+    vertical-align: bottom;
+    background-image: url('../images/smartphone.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+  }
 }
 .footer-container {
   border: 1px solid red;
