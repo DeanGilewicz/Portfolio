@@ -7,11 +7,15 @@ body {
   font-size: 62.5%;
 }
 .main-img {
-  background: radial-gradient(#BAC9CC, #A3B0B2, #899596, #6B7475);
+  background-image: url('../images/office.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  padding-bottom: 70px;
   .header-container {
     overflow: auto;
     border: 1px solid red;
-    margin: 0px 0px 30px 0px;
+    margin: 0px 0px 40px 0px;
     width: 100%;
     text-align: center;
     .header-left {
@@ -37,7 +41,11 @@ body {
       width: 48%;
       padding: 0% 1% 0% 0%;
       font-size: 2em;
+      font-weight: 600;
       border: 1px solid red;
+      a {
+        color: black;
+      }
       li {
         float: right;
         width: 20%;
@@ -96,37 +104,40 @@ body {
   text-align: center;
   border: 1px solid blue;
   h2 {
-    font-size: 3em;
+    font-size: 3.2em;
   }
-  .my-story {
-    border: 1px solid red;
-    width: 100%;
-    text-align: left;
-    font-size: 1.8em;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: white;
-    vertical-align: top;
-  }
-  .about-me {
-    border: 1px solid red;
-    width: 50%;
-    display: inline-block;
-    font-size: 1.8em;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: white;
-    vertical-align: top;
-  }
-  .motivation {
-    border: 1px solid red;
-    width: 50%;
-    display: inline-block;
-    font-size: 1.8em;
-    font-weight: 200;
-    line-height: 30px;
-    background-color: white;
-    vertical-align: top;
+  .about {
+    background-color: #6E6E6E;
+    .my-story {
+      border: 1px solid red;
+      width: 100%;
+      text-align: left;
+      font-size: 1.8em;
+      font-weight: 200;
+      line-height: 30px;
+      background-color: white;
+      vertical-align: top;
+    }
+    .about-me {
+      border: 1px solid red;
+      width: 50%;
+      display: inline-block;
+      font-size: 1.8em;
+      font-weight: 200;
+      line-height: 30px;
+      background-color: white;
+      vertical-align: top;
+    }
+    .motivation {
+      border: 1px solid red;
+      width: 50%;
+      display: inline-block;
+      font-size: 1.8em;
+      font-weight: 200;
+      line-height: 30px;
+      background-color: white;
+      vertical-align: top;
+    }
   }
 }
 .skills-container {
@@ -135,8 +146,12 @@ body {
   font-weight: 200;
   line-height: 30px;
   text-align: center;
-  img {
-    width: 70%;
+  .skills {
+    background-color: #EBEBEB;
+    img {
+      margin: 30px 0px 30px 0px;
+      width: 60%;
+    }
   }
 }
 .work-container {
@@ -318,27 +333,31 @@ body {
   font-size: 1.8em;
   font-weight: 200;
   line-height: 30px;
-  .tablet {
-    border: 1px solid red;
-    width: 16%;
-    min-height: 300px;
-    display: inline-block;
-    vertical-align: bottom;
-    background-image: url('../images/tablet.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    .tablet-content {
+  .contact {
+    background-color: #CFCFCF;
+    padding: 30px 0px 30px 0px;
+    .tablet {
       border: 1px solid red;
-      width: 80%;
-      margin: 40px auto;
-      a {
-        color: black;
-      }
-      button {
-        margin-bottom: 20px;
-        &:hover {
-          background-color: #5F9CA6;
-          border: 1px solid gray;
+      width: 16%;
+      min-height: 300px;
+      display: inline-block;
+      vertical-align: bottom;
+      background-image: url('../images/tablet.png');
+      background-repeat: no-repeat;
+      background-size: 100%;
+      .tablet-content {
+        border: 1px solid red;
+        width: 80%;
+        margin: 40px auto;
+        a {
+          color: black;
+        }
+        button {
+          margin-bottom: 20px;
+          &:hover {
+            background-color: #5F9CA6;
+            border: 1px solid gray;
+          }
         }
       }
     }
@@ -405,6 +424,7 @@ body {
   }
 }
 .footer-container {
+  background-color: #828282;
   border: 1px solid red;
   width: 100%;
   text-align: center;
