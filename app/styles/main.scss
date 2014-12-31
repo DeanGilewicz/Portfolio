@@ -1,9 +1,3 @@
-
-
-
-
-
-
 // Custom Styles
 body {
   background: #fff;
@@ -16,6 +10,7 @@ body {
   background-image: url('../images/main.png');
   background-repeat: no-repeat;
   background-size: 100%;
+  font-size: 1.6em;
   .header-container {
     overflow: auto;
     border: 1px solid red;
@@ -65,21 +60,18 @@ body {
   }
   .name-container {
     text-align: center;
-    font-size: 4em;
     border: 1px solid red;
     margin: 80px 0px 140px 0px;
-    .name-text {
-      padding: 30px 0px 30px 0px;
-      border: 1px solid green;
-      h1 {
-        margin: 20px 0px 20px 0px;
-        line-height: 1;
-        letter-spacing: -1px;
-      }
-      p {
-        margin: 0px;
-        font-size: 1em;
-      }
+    font-size: 4em;
+    h1 {
+      margin: 20px 0px 20px 0px;
+      line-height: 1;
+      letter-spacing: -1px;
+      font-size: 2em;
+    }
+    p {
+      margin: 0px;
+      font-size: 1em;
     }
   }
 }
@@ -88,15 +80,23 @@ body {
   width: 100%;
   text-align: center;
   border: 1px solid blue;
+  font-size: 1.8em;
+  .item {
+    padding: 50px 120px 50px 120px;
+    h5 {
+      font-size: 1em;
+    }
+  }
   h2 {
     font-size: 3.2em;
   }
   .slider {
-    background-color: gray;
+    background-color: #ADADAD;
+    min-height: 500px;
     .my-pic {
       border: 1px solid red;
       img {
-        width: 25%;
+        width: 20%;
         margin: 0 auto;
       }
     }
@@ -105,6 +105,7 @@ body {
       font-size: 1.8em;
       font-weight: 200;
       line-height: 30px;
+      padding-top: 90px;
       p {
         text-align: left;
       }
@@ -114,11 +115,15 @@ body {
       font-size: 1.8em;
       font-weight: 200;
       line-height: 30px;
+      padding-top: 110px;
       ul {
         padding: 0px;
         li {
           list-style-type: none;
           text-align: left;
+          &:first-child {
+            margin-bottom: 10px;
+          }
         }
       }
     }
@@ -127,11 +132,12 @@ body {
       font-size: 1.8em;
       font-weight: 200;
       line-height: 30px;
+      padding-top: 120px;
       ul {
         padding: 0px;
         li {
           list-style-type: none;
-          text-align: left;
+          text-align: center;
         }
       }
     }
@@ -144,7 +150,7 @@ body {
   line-height: 30px;
   text-align: center;
   .skills {
-    background-color: #EBEBEB;
+    background-color: #E5E5E5;
     img {
       margin: 30px 0px 30px 0px;
       width: 60%;
@@ -156,7 +162,7 @@ body {
   overflow: auto;
   text-align: center;
   border: 1px solid red;
-  font-size: 1.8em;
+  font-size: 3em;
   font-weight: 200;
   line-height: 30px;
   .myPlanit-app {
@@ -164,7 +170,7 @@ body {
     float: left;
     width: 50%;
     min-height: 180px;
-    background-color: black;
+    background-color: #333333;
     .bg-myPlanit {
       position: absolute;
       top: 0;
@@ -191,7 +197,7 @@ body {
     float: right;
     width: 50%;
     min-height: 180px;
-    background-color: black;
+    background-color: #333333;
     .bg-blog {
       position: absolute;
       top: 0;
@@ -218,7 +224,7 @@ body {
     float: left;
     width: 50%;
     min-height: 180px;
-    background-color: black;
+    background-color: #333333;
     .bg-fns {
       position: absolute;
       top: 0;
@@ -245,7 +251,7 @@ body {
     float: right;
     width: 50%;
     min-height: 180px;
-    background-color: black;
+    background-color: #333333;
     .bg-game {
       position: absolute;
       top: 0;
@@ -272,7 +278,7 @@ body {
     float: left;
     width: 50%;
     min-height: 180px;
-    background-color: black;
+    background-color: #333333;
     .bg-todo {
       position: absolute;
       top: 0;
@@ -299,7 +305,7 @@ body {
     float: right;
     width: 50%;
     min-height: 180px;
-    background-color: black;
+    background-color: #333333;
     .bg-snp {
       position: absolute;
       top: 0;
