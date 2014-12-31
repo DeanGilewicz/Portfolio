@@ -1,4 +1,9 @@
 
+
+
+
+
+
 // Custom Styles
 body {
   background: #fff;
@@ -80,24 +85,29 @@ body {
 }
 .about-container {
   clear: both;
-  overflow: auto;
   width: 100%;
   text-align: center;
   border: 1px solid blue;
   h2 {
     font-size: 3.2em;
   }
-  .about {
-    background-image: url('../images/me.png');
-    background-repeat: no-repeat;
-    background-size: 23%;
-    background-position: top;
+  .slider {
+    background-color: gray;
+    .my-pic {
+      border: 1px solid red;
+      img {
+        width: 25%;
+        margin: 0 auto;
+      }
+    }
     .my-story {
       border: 1px solid red;
-      text-align: left;
       font-size: 1.8em;
       font-weight: 200;
       line-height: 30px;
+      p {
+        text-align: left;
+      }
     }
     .about-me {
       border: 1px solid red;
