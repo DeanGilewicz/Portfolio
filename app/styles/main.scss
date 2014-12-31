@@ -10,7 +10,7 @@ body {
   background-image: url('../images/main.png');
   background-repeat: no-repeat;
   background-size: 100%;
-  font-size: 1.6em;
+  font-size: 1.8em;
   .header-container {
     overflow: auto;
     border: 1px solid red;
@@ -19,7 +19,7 @@ body {
     .header-left {
       float: left;
       width: 49%;
-      padding: 0% 0% 0% 1%;
+      padding: 1% 0% 0% 1%;
       font-size: 2em;
       border: 1px solid red;
       li {
@@ -36,8 +36,8 @@ body {
     }
     .header-right {
       float: right;
-      width: 48%;
-      padding: 0% 1% 0% 0%;
+      width: 49%;
+      padding: 1% 1% 0% 0%;
       font-size: 2em;
       font-weight: 600;
       border: 1px solid red;
@@ -46,10 +46,9 @@ body {
       }
       li {
         float: right;
-        width: 20%;
+        width: 16%;
         list-style-type: none;
         border: 1px solid red;
-        margin: 0% 1% 0% 1%;
         cursor: pointer;
         &:hover {
           color: #5F9CA6;
@@ -61,13 +60,14 @@ body {
   .name-container {
     text-align: center;
     border: 1px solid red;
-    margin: 80px 0px 140px 0px;
+    margin: 150px 0px 180px 0px;
     font-size: 4em;
     h1 {
       margin: 20px 0px 20px 0px;
       line-height: 1;
       letter-spacing: -1px;
       font-size: 2em;
+      font-weight: 800;
     }
     p {
       margin: 0px;
@@ -88,7 +88,7 @@ body {
     }
   }
   h2 {
-    font-size: 3.2em;
+    font-size: 3.4em;
   }
   .slider {
     background-color: #ADADAD;
@@ -149,6 +149,9 @@ body {
   font-weight: 200;
   line-height: 30px;
   text-align: center;
+  h2 {
+    font-size: 3.4em;
+  }
   .skills {
     background-color: #E5E5E5;
     img {
@@ -162,15 +165,16 @@ body {
   overflow: auto;
   text-align: center;
   border: 1px solid red;
-  font-size: 3em;
+  font-size: 1.8em;
   font-weight: 200;
   line-height: 30px;
+  h2 {
+    font-size: 3.4em;
+  }
   .myPlanit-app {
     position: relative;
-    float: left;
-    width: 50%;
     min-height: 180px;
-    background-color: #333333;
+    background-color: #292929;
     .bg-myPlanit {
       position: absolute;
       top: 0;
@@ -183,21 +187,20 @@ body {
       background-position: top;
       opacity: 0.1;
       &:hover {
-        opacity: 0.2;
+        opacity: 0.4;
       }
     }
     p {
-      padding-top: 40px;
-      font-size: 2em;
-      color: white;
+      padding-top: 12%;
+      font-size: 2.2em;
+      font-weight: 400;
+      color: #fff;
     }
   }
   .blog-app {
     position: relative;
-    float: right;
-    width: 50%;
     min-height: 180px;
-    background-color: #333333;
+    background-color: #292929;
     .bg-blog {
       position: absolute;
       top: 0;
@@ -210,21 +213,20 @@ body {
       background-position: top;
       opacity: 0.1;
       &:hover {
-        opacity: 0.2;
+        opacity: 0.4;
       }
     }
     p {
-      padding-top: 40px;
-      font-size: 2em;
-      color: white;
+      padding-top: 12%;
+      font-size: 2.2em;
+      font-weight: 400;
+      color: #fff;
     }
   }
   .fns-app {
     position: relative;
-    float: left;
-    width: 50%;
     min-height: 180px;
-    background-color: #333333;
+    background-color: #292929;
     .bg-fns {
       position: absolute;
       top: 0;
@@ -237,21 +239,20 @@ body {
       background-position: top;
       opacity: 0.1;
       &:hover {
-        opacity: 0.2;
+        opacity: 0.4;
       }
     }
     p {
-      padding-top: 40px;
-      font-size: 2em;
-      color: white;
+      padding-top: 12%;
+      font-size: 2.2em;
+      font-weight: 400;
+      color: #fff;
     }
   }
   .game-app {
     position: relative;
-    float: right;
-    width: 50%;
     min-height: 180px;
-    background-color: #333333;
+    background-color: #292929;
     .bg-game {
       position: absolute;
       top: 0;
@@ -264,21 +265,20 @@ body {
       background-position: top;
       opacity: 0.1;
       &:hover {
-        opacity: 0.2;
+        opacity: 0.4;
       }
     }
     p {
-      padding-top: 40px;
-      font-size: 2em;
-      color: white;
+      padding-top: 12%;
+      font-size: 2.2em;
+      font-weight: 400;
+      color: #fff;
     }
   }
   .todo-app {
     position: relative;
-    float: left;
-    width: 50%;
     min-height: 180px;
-    background-color: #333333;
+    background-color: #292929;
     .bg-todo {
       position: absolute;
       top: 0;
@@ -291,21 +291,20 @@ body {
       background-position: top;
       opacity: 0.1;
       &:hover {
-        opacity: 0.2;
+        opacity: 0.4;
       }
     }
     p {
-      padding-top: 40px;
-      font-size: 2em;
-      color: white;
+      padding-top: 12%;
+      font-size: 2.2em;
+      font-weight: 400;
+      color: #fff;
     }
   }
   .snp-app {
     position: relative;
-    float: right;
-    width: 50%;
     min-height: 180px;
-    background-color: #333333;
+    background-color: #292929;
     .bg-snp {
       position: absolute;
       top: 0;
@@ -318,13 +317,14 @@ body {
       background-position: top;
       opacity: 0.1;
       &:hover {
-        opacity: 0.2;
+        opacity: 0.4;
       }
     }
     p {
-      padding-top: 40px;
-      font-size: 2em;
-      color: white;
+      padding-top: 12%;
+      font-size: 2.2em;
+      font-weight: 400;
+      color: #fff;
     }
   }
 }
@@ -336,6 +336,9 @@ body {
   font-size: 1.8em;
   font-weight: 200;
   line-height: 30px;
+  h2 {
+    font-size: 3.4em;
+  }
   .contact {
     background-color: #CFCFCF;
     padding: 30px 0px 30px 0px;
