@@ -363,28 +363,37 @@ body {
     }
     .desktop {
       border: 1px solid red;
-      img {
-        width: 52%;
-      }
-      .desktop-content {
-        border: 1px solid red;
-        ul {
+      .desktop-container {
+        border: 2px solid blue;
+        padding: 20px 0% 20px 0%;
+        width: 100%;
+        img {
           width: 100%;
-          padding: 0px;
-          text-align: center;
         }
-        li {
-          display: inline-block;
-          width: 10%;
-          list-style-type: none;
+        .desktop-content {
           border: 1px solid red;
-          margin: 0px 3% 0px 3%;
-          img {
-            width: 85%;
+          ul {
+            width: 100%;
+            padding: 0px;
+            text-align: center;
           }
-          a {
-            text-decoration: none;
-            color: black;
+          li {
+            display: inline-block;
+            width: 10%;
+            list-style-type: none;
+            border: 1px solid red;
+            margin: 0px 3% 0px 3%;
+            img {
+              width: 85%;
+              &:hover {
+                padding-bottom: 2px;
+                border-bottom: 2px solid gray;
+              }
+            }
+            a {
+              text-decoration: none;
+              color: black;
+            }
           }
         }
       }
@@ -403,6 +412,7 @@ body {
           width: 11%;
           margin-bottom: 20px;
           &:hover {
+            padding-bottom: 1px;
             border-bottom: 2px solid gray;
           }
         }
