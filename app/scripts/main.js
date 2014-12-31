@@ -1,3 +1,3 @@
 $('.work-container div').mouseover(function() {
-  $('p').addClass('nodisplay');
+  $(this > p).addClass('nodisplay');
 });
