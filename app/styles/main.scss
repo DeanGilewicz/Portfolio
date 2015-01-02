@@ -1,33 +1,36 @@
 $font: 'Lato', sans-serif;
 
-// @mixin work() {
-//   position: relative;
-//   padding: 0px;
-//   img {
-//     width: 100%;
-//   }
-//   .overlay {
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background-color: rgba(0, 0, 0, 0.5);
-//     transition: .5s ease;
-//     opacity: 0;
-//     p:first-child {
-//       color: #fff;
-//       font-size: 2.2em;
-//       font-weight: 400;
-//     }
-//     a {
-//       color: #fff;
-//     }
-//   }
-//   &:hover .overlay {
-//     opacity: 1;
-//   }
-// }
+@mixin work() {
+  border: 1px solid black;
+  position: relative;
+  padding: 0px;
+  margin: 4% 2% 1% 2%;
+  width: 46%;
+  img {
+    width: 100%;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: .5s ease;
+    opacity: 0;
+    p:first-child {
+      color: #fff;
+      font-size: 2.2em;
+      font-weight: 400;
+    }
+    a {
+      color: #fff;
+    }
+  }
+  &:hover .overlay {
+    opacity: 1;
+  }
+}
 
 body {
   background: #fff;
@@ -36,7 +39,7 @@ body {
   font-size: 62.5%;
   .title-area {
     padding: 0px;
-    overflow: hidden;
+    overflow: auto;
     background-image: url('../images/main.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -67,7 +70,7 @@ body {
         float: right;
         width: 49%;
         padding: 1% 1% 0% 0%;
-        font-size: 1.4em;
+        font-size: 4em;
         font-weight: 700;
         border: 1px solid red;
         a {
@@ -90,17 +93,17 @@ body {
       text-align: center;
       border: 1px solid red;
       h1 {
-        padding-top: 5%;
-        margin-bottom: 5%;
+        padding-top: 9%;
+        margin-bottom: 3%;
         line-height: 1;
-        letter-spacing: -1px;
-        font-size: 6em;
+        font-size: 14em;
         font-weight: 900;
       }
       p {
         margin: 0px;
-        font-size: 3em;
-        padding-bottom: 12%;
+        font-size: 8em;
+        font-weight: 700;
+        padding-bottom: 14%;
       }
     }
   }
@@ -110,16 +113,17 @@ body {
     background-color: #F3F3F4;
     text-align: center;
     border: 1px solid blue;
+    h2 {
+      font-size: 6em;
+    }
     .item {
-      padding: 50px 120px 50px 120px;
+      padding: 50px 10% 50px 10%;
       h5 {
         font-size: 1em;
       }
     }
-    h2 {
-      font-size: 3.4em;
-    }
     .slider {
+      padding: 0px;
       .carousel-control {
         background-image: none;
       }
@@ -180,7 +184,7 @@ body {
     line-height: 30px;
     text-align: center;
     h2 {
-      font-size: 3.4em;
+      font-size: 6em;
     }
     .skills {
       img {
@@ -189,35 +193,35 @@ body {
       }
     }
   }
-  // .work-container {
-  //   overflow: auto;
-  //   padding: 0% 5% 5% 5%;
-  //   background-color: #F3F3F4;
-  //   text-align: center;
-  //   border: 1px solid red;
-  //   font-weight: 700;
-  //   h2 {
-  //     font-size: 3.4em;
-  //   }
-  //   .myPlanit-app {
-  //     @include work;
-  //   }
-  //   .blog-app {
-  //     @include work;
-  //   }
-  //   .fns-app {
-  //     @include work;
-  //   }
-  //   .game-app {
-  //     @include work;
-  //   }
-  //   .todo-app {
-  //     @include work;
-  //   }
-  //   .snp-app {
-  //     @include work;
-  //   }
-  // }
+  .work-container {
+    overflow: auto;
+    padding: 0% 5% 5% 5%;
+    background-color: #F3F3F4;
+    text-align: center;
+    border: 1px solid red;
+    font-weight: 700;
+    h2 {
+      font-size: 6em;
+    }
+    .myPlanit-app {
+      @include work;
+    }
+    .blog-app {
+      @include work;
+    }
+    .fns-app {
+      @include work;
+    }
+    .game-app {
+      @include work;
+    }
+    .todo-app {
+      @include work;
+    }
+    .snp-app {
+      @include work;
+    }
+  }
   .contact-container {
     clear: both;
     overflow: auto;
@@ -226,7 +230,7 @@ body {
     border: 1px solid red;
     font-weight: 700;
     h2 {
-      font-size: 3.4em;
+      font-size: 6em;
     }
     .contact {
       overflow: auto;
