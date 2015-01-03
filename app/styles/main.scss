@@ -1,4 +1,5 @@
 $font: 'Lato', sans-serif;
+$fontBody: 'Arvo', serif;
 
 @mixin work() {
   border: 1px solid black;
@@ -19,10 +20,12 @@ $font: 'Lato', sans-serif;
     transition: .6s ease;
     opacity: 0;
     font-size: 2.5em;
+    font-family: $fontBody;
+    font-weight: 400;
     p:first-child {
       color: #fff;
       font-size: 2em;
-      font-weight: 400;
+      font-weight: 700;
       padding-top: 13%;
     }
     a {
@@ -110,94 +113,61 @@ body {
     }
   }
   .about-container {
-    padding: 0px;
     clear: both;
+    overflow: auto;
     background-color: #F3F3F4;
     text-align: center;
     border: 1px solid blue;
     h2 {
       font-size: 6em;
       font-weight: 700;
+      margin: 20px 0px 20px 0px;
     }
-    .item {
-      padding: 50px 10% 50px 10%;
-      h5 {
-        font-size: 1em;
-      }
-    }
-    .slider {
-      padding: 0px;
-      .carousel-control {
-        background-image: none;
-      }
-      .my-pic {
-        border: 1px solid red;
-        img {
-          width: 20%;
-          margin: 0 auto;
-        }
-      }
-      .my-story {
-        border: 1px solid red;
-        font-size: 1.8em;
-        font-weight: 400;
-        line-height: 30px;
-        padding-top: 8%;
-        p {
-          text-align: left;
-        }
-      }
-      .about-me {
-        border: 1px solid red;
-        font-size: 1.8em;
-        font-: 200;
-        line-height: 30px;
-        padding-top: 10%;
-        ul {
-          padding: 0px;
-          li {
-            list-style-type: none;
-            text-align: left;
-            &:first-child {
-              margin-bottom: 10px;
-            }
-          }
-        }
-      }
-      .motivation {
-        border: 1px solid red;
-        font-size: 1.8em;
-        font-weight: 400;
-        line-height: 30px;
-        padding-top: 10%;
-        ul {
-          padding: 0px;
-          li {
-            list-style-type: none;
-            text-align: center;
-          }
-        }
-      }
-    }
-  }
-  .skills-container {
-    padding: 0px;
-    border: 1px solid red;
-    font-weight: 700;
-    line-height: 30px;
-    text-align: center;
-    h2 {
-      font-size: 6em;
+    h5 {
+      font-size: 4.5em;
       font-weight: 700;
+      padding-top: 1%;
+    }
+    .who {
+      border: 1px solid red;
+      p {
+        width: 90%;
+        margin: 0 auto;
+        font-family: $fontBody;
+        font-size: 3.5em;
+      }
     }
     .skills {
-      img {
-        margin: 20px 0px 20px 0px;
-        width: 60%;
+      border: 1px solid red;
+      .skills-content {
+        border: 1px solid red;
+        img {
+          width: 60%;
+        }
+        p {
+          margin-top: 15px;
+          font-family: $fontBody;
+          font-size: 2.8em;
+        }
+      }
+    }
+    .me {
+      border: 1px solid red;
+      .more-content {
+        border: 1px solid red;
+        img {
+          width: 18%;
+        }
+        p {
+          margin-top: 19px;
+          font-family: $fontBody;
+          font-size: 2.8em;
+        }
       }
     }
   }
   .work-container {
+    clear: both;
     overflow: auto;
     padding: 0% 5% 5% 5%;
     background-color: #F3F3F4;

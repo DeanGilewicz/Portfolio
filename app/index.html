@@ -13,10 +13,10 @@
     <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
     <!-- endbower -->
     <!-- endbuild -->
-    <link rel='stylesheet' type='text/css' href="http://fonts.googleapis.com/css?family=Lato:400,700,900" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900|Arvo:400,700' rel='stylesheet' type='text/css'>
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-
     <!-- endbuild -->
 
     <!-- build:js scripts/vendor/modernizr.js -->
@@ -24,7 +24,6 @@
     <!-- endbuild -->
   </head>
   <body>
-
     <section class="title-area">
       <header class="header-container">
         <a name="top"></a>
@@ -38,8 +37,7 @@
         <ul class="header-right">
           <a href="#contact"><li>Contact</li></a>
           <a href="#work"><li>Work</li></a>
-          <a href="#skills"><li>Skills</li></a>
-          <a href="#me"><li>Me</li></a>
+          <a href="#about"><li>About</li></a>
         </ul>
       </header>
       <div class="name-container">
@@ -48,64 +46,34 @@
       </div>
     </section>
     <section class="about-container">
-      <a name="me"></a>
-      <h2>ME</h2>
-      <div id="carousel-example-generic" class="carousel slide slider" data-ride="carousel" data-interval="false">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-        </ol>
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner" role="listbox">
-          <div class="item my-pic active">
-            <img src="../images/me.png" alt="image of Dean Gilewicz" />
-          </div>
-          <div class="item my-story">
-            <h5>My Story</h5>
-            <p>
-              For several years I had been impacting people's lives through coaching. Influencing a person's development and experiences is very rewarding but I wanted to have an impact on a global scale.
-              In addition to coaching, I worked on a company's website and quickly realized I wanted to have control on how things were displayed to the user - I was excited to discover the world of web development and began learning to code.
-              More recently, I attended the Iron Yard Academy in Atlanta, GA - a full-time front end development program - to enhance my code base and ensure I stayed current with the latest technologies.
-              I've always had a passion for technology and developing or enhancing web applications has enabled me to not only reach more people but to also continue to influence experiences.
-            </p>
-          </div>
-          <div class="item about-me">
-            <h5>About Me</h5>
-            <ul>
-              <li>Born and raised in England, football (or as American's would say...soccer) has been a big part of my life. Watching, playing, or coaching is something I have always enjoyed. Win, lose, or draw, I support Tottenham Hotspur FC</li>
-              <li>I love to travel. My wife and I are currently on a journey to see the 7 modern wonders of the world. We have seen 6 of the 7 and plan to visit Jordan in the near future to see Petra! The next advanture is to step foot on all continents of the world</li>
-            </ul>
-          </div>
-          <div class="item motivation">
-            <h5>Motivated By</h5>
-            <ul>
-              <li>an ongoing drive to better myself and the experiences I provide users</li>
-              <li>people who care about what they do</li>
-              <li>people who take pride in their own performance</li>
-              <li>people who enjoy the process of collaboration</li>
-              <li>people who work hard but enjoy life</li>
-            </ul>
-          </div>
-        </div>
-        <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+      <a name="about"></a>
+      <h2>About</h2>
+      <div class="who col-md-12">
+        <p>
+          Hello, I’m Dean, a front end web developer based in Atlanta, GA.
+          I have spent several years influencing people's experiences as a coach and bring that to the world of web development.
+          With a passion for technology, I enjoy building and enhancing web apps that are user-friendly, efficient, and functional.
+        </p>
       </div>
-    </section>
-    <section class="skills-container">
-      <a name="skills"></a>
-      <h2>SKILLS</h2>
-      <div class="skills">
-        <img src="../images/laptopPlus.png" alt="picture of a laptop" />
+      <div class="skills col-md-6">
+        <h5>Skills</h5>
+        <div class="skills-content">
+          <img src="../images/laptopPlus.png" alt="picture of a laptop" />
+          <p>
+            With an ongoing drive to better myself and the experiences I provide users, I continue to learn and work with new technologies.
+            So far, I have worked with the above technologies and look forward to opportunities to further expand and explore.
+          </p>
+        </div>
+      </div>
+      <div class="me col-md-6">
+        <h5>Me</h5>
+        <div class="more-content">
+          <img src="../images/me.png" />
+          <p>
+            Born and raised in England, football/soccer has been a big part of my life. Win, lose, or draw, I support Tottenham Hotspur FC.
+            I also love to travel - my wife and I are currently on a journey to see the 7 modern wonders of the world. Next up is to step foot on all continents of the world.
+          </p>
+        </div>
       </div>
     </section>
     <section class="work-container">
@@ -115,14 +83,14 @@
         <img src="../images/myPlanitapp.png" />
         <div class="overlay">
           <p>myPlanit</p>
-          <p><a href="myPlanit.html" data-toggle="modal" data-target="#myModal">view project</a></p>
+          <p><a data-remote="myplanit.html" data-toggle="modal" data-target="#myModal">view project</a></p>
         </div>
       </div>
       <div class="blog-app col-sm-6">
         <img src="../images/travelblog.png" />
         <div class="overlay">
           <p>All Things Travel</p>
-          <p><a href="#">view project</a></p>
+          <p><a data-remote="all_things_travel.html" data-toggle="modal" data-target="#myModal">view project</a></p>
         </div>
       </div>
       <div class="fns-app col-sm-6">
@@ -154,26 +122,13 @@
         </div>
       </div>
     </section>
-    <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-          </div>
-          <div class="modal-body">
-            ...
-          </div>
-          <div class="modal-footer">
-            <p>Tech Stack</p>
-          </div>
-        </div>
-      </div>
-    </div>
     <section class="contact-container">
       <a name="contact"></a>
       <h2>CONTACT</h2>
+      <p>
+        I am motivated by environments where people care about what they do,
+        take pride in their performance and work hard but enjoy life.
+      </p>
       <div class="contact">
         <div class="tablet col-md-4">
           <div class="tablet-container">
