@@ -1,11 +1,12 @@
-$('#myModal').on('hidden.bs.modal', function () {
-  $(this).removeData('modal');
+$('[data-load-remote]').on('click',function(e) {
+  e.preventDefault();
+  var $this = $(this);
+  var remote = $this.data('load-remote');
+  if(remote) {
+    $($this.data('remote-target')).load(remote);
+  }
 });
 
 $('.male').on('click', function () {
   $('.social').toggleClass('toggle-show');
-});
-
-$(document).ready(function(){
-  $('body').scrollspy({target: "#myScrollspy"})
 });

@@ -165,9 +165,26 @@
       <a href="#top"><img src="../images/up.png" alt="up icon" /></a>
     </footer>
 
+    <a href="myplanit.html"><h1>TEST</h1></a>
 
+    <a href="#myModal" role="button" class="btn" data-toggle="modal" data-load-remote="all_things_travel.html" data-remote-target="#myModal .modal-body">Btn 1</a>
+    <a href="#myModal" role="button" class="btn" data-toggle="modal" data-load-remote="http://fiddle.jshell.net/Sherbrow/bHmRB/1/show/" data-remote-target="#myModal .modal-body">Btn 2</a>
+    <a href="#myModal" role="button" class="btn" data-toggle="modal" data-load-remote="http://fiddle.jshell.net/Sherbrow/bHmRB/2/show/" data-remote-target="#myModal .modal-body">Btn 3</a>
+    <a href="#myModal" role="button" class="btn" data-toggle="modal" data-load-remote="http://fiddle.jshell.net/Sherbrow/bHmRB/3/show/" data-remote-target="#myModal .modal-body">Btn 4</a>
 
-
+    <div class="modal hide" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">Modal header</h3>
+      </div>
+      <div class="modal-body">
+        <p>One fine body…</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        <button class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
