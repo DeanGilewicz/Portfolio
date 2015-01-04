@@ -25,98 +25,100 @@
   </head>
   <body data-spy="scroll" data-target="#myScrollspy">
     <nav class="navbar navbar-default navbar-fixed-top" id="myScrollspy">
-      <ul class="nav nav-tabs links">
-        <li class="active"><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li class="male"><i class="fa fa-male fa-lg"></i></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="http://deangilewicz.com/" target="_blank">Blog</a></li>
-      </ul>
-      <ul class="nav nav-tabs social toggle-show">
-        <li><a href="mailto:gilewiczd@gmail.com?Subject=Possible%20Opportunity" target="_top"><i class="fa fa-envelope-o"></i></a></li>
-        <li><a href="tel:7703598273"><i class="fa fa-phone"></i></a></li>
-        <li><a href="https://twitter.com/deangilewicz" target="_blank"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home"target="_blank"><i class="fa fa-linkedin"></i></a></li>
-      </ul>
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#top"><i class="fa fa-male fa-lg"></i></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#me">Me</a></li>
+            <li><a href="#tech">Tech</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <section class="title-area" id="top">
+    <section class="title-area col-xs-12" id="top">
       <div class="name-container">
         <h1>Dean Gilewicz</h1>
         <p>Front End Developer</p>
+        <ul>
+          <li><a href="mailto:gilewiczd@gmail.com?Subject=Possible%20Opportunity" target="_top"><i class="fa fa-envelope-o"></i></a></li>
+          <li><a href="tel:7703598273"><i class="fa fa-phone"></i></a></li>
+          <li><a href="https://twitter.com/deangilewicz" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home"target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li><a href="http://deangilewicz.com/" target="_blank">Blog</a></li>
+        </ul>
       </div>
     </section>
-    <section class="about-container" id="about">
-      <h2>About</h2>
-      <div class="who col-md-12">
+    <section class="me-container col-xs-12" id="me">
+      <h2>Me</h2>
+      <div class="me">
         <p>
           Hello, I’m Dean, a front end web developer based in Atlanta, GA.
           I have spent several years influencing people's experiences as a coach and bring that to the world of web development.
           With a passion for technology, I enjoy building and enhancing web apps that are user-friendly, efficient, and functional.
         </p>
       </div>
-      <div class="skills col-md-6">
-        <h5>Skills</h5>
-        <div class="skills-content">
-          <img src="../images/laptopPlus.png" alt="picture of a laptop" />
-          <p>
-            With an ongoing drive to better myself and the experiences I provide users, I continue to learn and work with new technologies.
-            So far, I have worked with the above technologies and look forward to opportunities to further expand and explore.
-          </p>
-        </div>
-      </div>
-      <div class="me col-md-6">
-        <h5>Me</h5>
-        <div class="more-content">
-          <img src="../images/me.png" />
-          <p>
-            Born and raised in England, football/soccer has been a big part of my life. Win, lose, or draw, I support Tottenham Hotspur FC.
-            I also love to travel - my wife and I are currently on a journey to see the 7 modern wonders of the world. Next up is to step foot on all continents of the world.
-          </p>
-        </div>
+    </section>
+    <section class="tech-container col-xs-12" id="tech">
+      <h2>Tech</h2>
+      <div class="tech">
+        <img src="../images/laptopPlus.png" alt="picture of a laptop" />
+        <p>
+          With an ongoing drive to better myself and the experiences I provide users, I continue to learn and work with new technologies.
+          So far, I have worked with the above technologies and look forward to opportunities to further expand and explore.
+        </p>
       </div>
     </section>
-    <section class="work-container" id="work">
-      <h2>WORK</h2>
-      <div class="myPlanit-app col-sm-6">
+    <section class="work-container col-xs-12" id="work">
+      <h2>Work</h2>
+      <div class="myPlanit-app col-sm-12 col-md-6">
         <img src="../images/myPlanitapp.png" />
         <div class="overlay">
           <p>myPlanit</p>
-          <p><a data-remote="myplanit.html" data-toggle="modal" data-target="#myModal">view project</a></p>
+          <p><a href="projects.html">view project</a></p>
         </div>
       </div>
-      <div class="blog-app col-sm-6">
+      <div class="blog-app col-sm-12 col-md-6">
         <img src="../images/travelblog.png" />
         <div class="overlay">
           <p>All Things Travel</p>
-          <p><a data-remote="all_things_travel.html" data-toggle="modal" data-target="#myModal">view project</a></p>
+          <p><a href="projects.html">view project</a></p>
         </div>
       </div>
-      <div class="fns-app col-sm-6">
+      <div class="fns-app col-sm-12 col-md-6">
         <img src="../images/fns.png" />
         <div class="overlay">
           <p>Fork &amp; Spoon</p>
-          <p><a href="#">view project</a></p>
+          <p><a href="projects.html">view project</a></p>
         </div>
       </div>
-      <div class="game-app col-sm-6">
+      <div class="game-app col-sm-12 col-md-6">
         <img src="../images/thearena.png" />
         <div class="overlay">
           <p>The Arena</p>
-          <p><a href="#">view project</a></p>
+          <p><a href="projects.html">view project</a></p>
         </div>
       </div>
-      <div class="todo-app col-sm-6">
+      <div class="todo-app col-sm-12 col-md-6">
         <img src="../images/todo.png" />
         <div class="overlay">
           <p>Do Your Chores</p>
-          <p><a href="#">view project</a></p>
+          <p><a href="projects.html">view project</a></p>
         </div>
       </div>
-      <div class="snp-app col-sm-6">
+      <div class="snp-app col-sm-12 col-md-6">
         <img src="../images/snp.png" />
         <div class="overlay">
           <p>Surf &amp; Paddle</p>
-          <p><a href="#">view project</a></p>
+          <p><a href="projects.html">view project</a></p>
         </div>
       </div>
     </section>
@@ -139,6 +141,16 @@
         <div class="desktop col-md-4">
           <div class="desktop-container">
             <img src="../images/desktop.png" alt="picture of a desktop" />
+            <div class=" col-md-12">
+              <h5>Me</h5>
+              <div class="more-content">
+                <img src="../images/me.png" />
+                <p>
+                  Born and raised in England, football/soccer has been a big part of my life. Win, lose, or draw, I support Tottenham Hotspur FC.
+                  I also love to travel - my wife and I are currently on a journey to see the 7 modern wonders of the world. Next up is to step foot on all continents of the world.
+                </p>
+              </div>
+            </div>
             <div class="desktop-content">
               <p>Give me a shout</p>
               <ul>
@@ -165,26 +177,7 @@
       <a href="#top"><img src="../images/up.png" alt="up icon" /></a>
     </footer>
 
-    <a href="myplanit.html"><h1>TEST</h1></a>
-
-    <a href="#myModal" role="button" class="btn" data-toggle="modal" data-load-remote="all_things_travel.html" data-remote-target="#myModal .modal-body">Btn 1</a>
-    <a href="#myModal" role="button" class="btn" data-toggle="modal" data-load-remote="http://fiddle.jshell.net/Sherbrow/bHmRB/1/show/" data-remote-target="#myModal .modal-body">Btn 2</a>
-    <a href="#myModal" role="button" class="btn" data-toggle="modal" data-load-remote="http://fiddle.jshell.net/Sherbrow/bHmRB/2/show/" data-remote-target="#myModal .modal-body">Btn 3</a>
-    <a href="#myModal" role="button" class="btn" data-toggle="modal" data-load-remote="http://fiddle.jshell.net/Sherbrow/bHmRB/3/show/" data-remote-target="#myModal .modal-body">Btn 4</a>
-
-    <div class="modal hide" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h3 id="myModalLabel">Modal header</h3>
-      </div>
-      <div class="modal-body">
-        <p>One fine body…</p>
-      </div>
-      <div class="modal-footer">
-        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-        <button class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
+    <a href="projects.html"></h1>Projects</h1></a>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->

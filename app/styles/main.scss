@@ -36,7 +36,6 @@ $fontBody: 'Arvo', serif;
     opacity: 1;
   }
 }
-
 body {
   position: relative;
   background: #fff;
@@ -46,21 +45,12 @@ body {
   .navbar {
     background-color: black;
     font-size: 3em;
-    text-align: center;
-    li {
-      float: none;
-      display: inline-block;
-      margin: 0% 3% 0% 3%;
-      width: 100px;
-      border: 1px solid red;
-      .fa-male {
-        font-size: 1.5em;
-        color: blue;
-        cursor: pointer;
+    .container {
+      margin: 0px 1% 0px 1%;
+      .navbar-brand {
+        border: 1px solid red;
+        float: left;
       }
-    }
-    .toggle-show {
-      display: none;
     }
   }
   .title-area {
@@ -87,71 +77,68 @@ body {
       }
     }
   }
-  .about-container {
+  .me-container {
     clear: both;
     overflow: auto;
-    background-color: #F3F3F4;
+    padding: 50px 0px 50px 0px;
+    background-color: gray;
     text-align: center;
     border: 1px solid blue;
+    line-height: 1.5;
     h2 {
-      font-size: 6em;
+      font-size: 7em;
       font-weight: 700;
-      margin: 20px 0px 20px 0px;
+      margin: 20px 0px 50px 0px;
     }
-    h5 {
-      font-size: 4.5em;
-      font-weight: 700;
-      padding-top: 1%;
-    }
-    .who {
+    .me {
       border: 1px solid red;
       p {
-        width: 90%;
+        width: 85%;
         margin: 0 auto;
         font-family: $fontBody;
         font-size: 3.2em;
       }
     }
-    .skills {
-      border: 1px solid red;
-      .skills-content {
-        border: 1px solid red;
-        img {
-          width: 60%;
-        }
-        p {
-          margin-top: 15px;
-          font-family: $fontBody;
-          font-size: 2.8em;
-        }
-      }
+  }
+  .tech-container {
+    clear: both;
+    overflow: auto;
+    padding: 50px 0px 50px 0px;
+    background-color: green;
+    text-align: center;
+    border: 1px solid blue;
+    line-height: 1.5;
+    h2 {
+      font-size: 7em;
+      font-weight: 700;
+      margin: 20px 0px 50px 0px;
     }
-    .me {
+    .tech {
       border: 1px solid red;
-      .more-content {
-        border: 1px solid red;
-        img {
-          width: 18%;
-        }
-        p {
-          margin-top: 19px;
-          font-family: $fontBody;
-          font-size: 2.8em;
-        }
+      img {
+        width: 40%;
+        margin-bottom: 30px;
+      }
+      p {
+        width: 85%;
+        margin: 0px auto;
+        font-family: $fontBody;
+        font-size: 3.2em;
       }
     }
   }
   .work-container {
     clear: both;
     overflow: auto;
-    padding: 0% 5% 5% 5%;
+    padding: 50px 0px 50px 0px;
     background-color: #F3F3F4;
     text-align: center;
     border: 1px solid red;
     font-weight: 700;
     h2 {
-      font-size: 6em;
+      font-size: 7em;
       font-weight: 700;
+      margin: 20px 0px 50px 0px;
     }
     .myPlanit-app {
       @include work;
@@ -175,13 +162,15 @@ body {
   .contact-container {
     clear: both;
     overflow: auto;
-    background-color: #9E9E9E;
+    padding: 50px 0px 50px 0px;
+    background-color: #F3F3F4;
     text-align: center;
     border: 1px solid red;
     font-weight: 700;
     h2 {
-      font-size: 6em;
+      font-size: 7em;
       font-weight: 700;
+      margin: 20px 0px 50px 0px;
     }
     .contact {
       overflow: auto;
@@ -226,6 +215,21 @@ body {
           .desktop-content {
             padding-top: 20px;
             border: 1px solid red;
+
+            .me {
+              border: 1px solid red;
+              .more-content {
+                border: 1px solid red;
+                img {
+                  width: 18%;
+                }
+                p {
+                  margin-top: 19px;
+                  font-family: $fontBody;
+                  font-size: 2.8em;
+                }
+              }
+            }
             p {
               font-size: 2em;
               font-weight: 400;
