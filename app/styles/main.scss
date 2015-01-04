@@ -42,58 +42,28 @@ body {
   color: #111;
   font-family: $font;
   font-size: 62.5%;
+  .navbar {
+    background-color: transparent;
+    font-size: 3em;
+    .navbar-right {
+      border: 1px solid red;
+    }
+    .navbar-left {
+      border: 1px solid red;
+      li {
+        width: 13%;
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
   .title-area {
     padding: 0px;
     overflow: auto;
     background-image: url('../images/main.png');
     background-repeat: no-repeat;
     background-size: cover;
-    .header-container {
-      overflow: auto;
-      border: 1px solid red;
-      width: 100%;
-      text-align: center;
-      .header-left {
-        float: left;
-        width: 49%;
-        padding: 1% 0% 0% 1%;
-        font-size: 1.4em;
-        border: 1px solid red;
-        li {
-          float: left;
-          width: 9%;
-          list-style-type: none;
-          border: 1px solid red;
-          color: white;
-          cursor: pointer;
-          img {
-            width: 60%;
-          }
-        }
-      }
-      .header-right {
-        float: right;
-        width: 49%;
-        padding: 1% 1% 0% 0%;
-        font-size: 4em;
-        font-weight: 700;
-        border: 1px solid red;
-        a {
-          color: black;
-        }
-        li {
-          float: right;
-          width: 20%;
-          list-style-type: none;
-          border: 1px solid red;
-          cursor: pointer;
-          &:hover {
-            color: #5F9CA6;
-            text-decoration: underline;
-          }
-        }
-      }
-    }
     .name-container {
       text-align: center;
       border: 1px solid red;
@@ -134,7 +104,7 @@ body {
         width: 90%;
         margin: 0 auto;
         font-family: $fontBody;
-        font-size: 3.5em;
+        font-size: 3.2em;
       }
     }
     .skills {
