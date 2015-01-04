@@ -38,24 +38,29 @@ $fontBody: 'Arvo', serif;
 }
 
 body {
+  position: relative;
   background: #fff;
   color: #111;
   font-family: $font;
   font-size: 62.5%;
   .navbar {
-    background-color: transparent;
+    background-color: black;
     font-size: 3em;
-    .navbar-right {
+    text-align: center;
+    li {
+      float: none;
+      display: inline-block;
+      margin: 0% 3% 0% 3%;
+      width: 100px;
       border: 1px solid red;
-    }
-    .navbar-left {
-      border: 1px solid red;
-      li {
-        width: 13%;
-        img {
-          width: 100%;
-        }
+      .fa-male {
+        font-size: 1.5em;
+        color: blue;
+        cursor: pointer;
       }
+    }
+    .toggle-show {
+      display: none;
     }
   }
   .title-area {
