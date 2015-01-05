@@ -4,11 +4,9 @@ $fontBody: 'Arvo', serif;
 @mixin work() {
   border: 1px solid black;
   position: relative;
-  padding: 0px;
-  // margin: 4% 2% 1% 2%;
-  // width: 46%;
   img {
     width: 100%;
+    border: 2px solid blue;
   }
   .overlay {
     position: absolute;
@@ -22,7 +20,7 @@ $fontBody: 'Arvo', serif;
     font-size: 2.5em;
     font-family: $fontBody;
     font-weight: 400;
-    p:first-child {
+    p {
       color: #fff;
       font-size: 2em;
       font-weight: 700;
@@ -54,18 +52,19 @@ body {
   }
   .title-area {
     padding: 0px;
-    overflow: auto;
+    overflow: hidden;
+    height: 100vh;
     background-image: url('../images/main.png');
     background-repeat: no-repeat;
     background-size: cover;
     .name-container {
       width: 80%;
       margin: 0 auto;
-      padding: 15% 0px 15% 0px;
+      padding: 15% 0% 15% 0%;
       text-align: center;
       border: 2px solid green;
       h1 {
-        margin: 0px;
+        margin: 0%;
         border: 1px solid red;
         line-height: 1;
         font-size: 14em;
@@ -73,28 +72,44 @@ body {
       }
       p {
         border: 1px solid red;
-        margin: 0px;
+        margin: 0%;
         font-size: 8em;
         font-weight: 700;
       }
       ul {
-        padding: 0px;
+        padding: 0%;
         width: 80%;
-        margin: 0 auto;
+        margin: 0% auto;
         text-align: center;
-        li {
+        .element {
+          position: relative;
+          overflow: hidden;
           list-style-type: none;
           display: inline-block;
-          margin: 0px 1% 0px 1%;
-          padding: 5px 0px 5px 0px;
-          width: 15%;
-          font-size: 2.8em;
+          margin: 0% 1% 0% 1%;
+          padding: 2% 0% 2% 0%;
+          width: 22%;
+          height: 30px;
+          vertical-align: center;
           border: 2px solid darkgray;
-          a {
-            color: black;
-            &:hover {
-              text-decoration: none;
-              color: red;
+          .wrap {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            .init {
+              height: 30px;
+              width: 100%;
+              font-size: 2.8em;
+              background: lightgrey;
+            }
+            .short {
+              height: 40px;
+              width: 100%;
+              font-size: 3.3em;
+              background: black;
+              // a {
+              //   color: white;
+              // }
             }
           }
         }
@@ -138,8 +153,8 @@ body {
       margin: 20px 0px 50px 0px;
     }
     .tech {
-      border: 1px solid red;
       position: relative;
+      border: 1px solid red;
       img {
         width: 40%;
         margin-bottom: 30px;
@@ -172,10 +187,16 @@ body {
     text-align: center;
     border: 1px solid red;
     font-weight: 700;
+    div {
+      padding: 1% 5% 1% 5%;
+    }
     h2 {
       font-size: 7em;
       font-weight: 700;
       margin: 20px 0px 50px 0px;
+    }
+    p {
+      font-size: 4em;
     }
     .myPlanit-app {
       @include work;
