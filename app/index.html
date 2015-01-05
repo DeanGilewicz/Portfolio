@@ -89,7 +89,7 @@
     </section>
     <section class="tech-container col-xs-12" id="tech">
       <h2>Tech</h2>
-      <div class="tech">
+      <div class="tech-content">
         <img src="../images/laptopPlusbw.png" alt="picture of a laptop" />
         <div class="pic-overlay">
           <img src="../images/laptopPlus.png" alt="picture of a laptop" />
@@ -102,133 +102,288 @@
     </section>
     <section class="work-container col-xs-12" id="work">
       <h2>Work</h2>
-      <div class="myPlanit-app col-xs-12 col-sm-4">
-        <div class="overlay-container">
-          <img src="../images/myPlanitapp.png" />
-
-          <div class="overlay">
-
-            <div id="carousel-example-generic" class="carousel slide slider" data-ride="carousel" data-interval="false">
-              <!-- Indicators -->
-              <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-              </ol>
-              <!-- Wrapper for slides -->
-              <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                  <p>myPlanit</p>
+      <div class="work-content">
+        <div class="myPlanit-app col-xs-12 col-sm-4">
+          <div class="overlay-container">
+            <img src="../images/myPlanitapp.png" />
+            <div class="overlay">
+              <div id="carousel-one" class="carousel slide slider" data-ride="carousel" data-interval="false">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-one" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-one" data-slide-to="1"></li>
+                  <li data-target="#carousel-one" data-slide-to="2"></li>
+                  <li data-target="#carousel-one" data-slide-to="3"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <p>myPlanit</p>
+                  </div>
+                  <div class="item">
+                    <p>This app was cool</p>
+                  </div>
+                  <div class="item">
+                    <ul>
+                      <li>Angular.js</li>
+                      <li>jQuery</li>
+                      <li>Underscore</li>
+                      <li>Parse</li>
+                      <li>Foursquare API</li>
+                      <li>Google Maps API</li>
+                      <li>Google Directions API</li>
+                      <li>Foundation</li>
+                      <li>Sass</li>
+                    </ul>
+                  </div>
+                  <div class="item">
+                    <p>See code</p>
+                    <p>See live</p>
+                  </div>
                 </div>
-                <div class="item">
-                  <p>This app was cool</p>
-                </div>
-                <div class="item">
-                  <ul>
-                    <li>Angular.js</li>
-                    <li>jQuery</li>
-                    <li>Underscore</li>
-                    <li>Parse</li>
-                    <li>Foursquare API</li>
-                    <li>Google Maps API</li>
-                    <li>Google Directions API</li>
-                    <li>Foundation</li>
-                    <li>Sass</li>
-                  </ul>
-                </div>
-                <div class="item">
-                  <p>See code</p>
-                  <p>See live</p>
-                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-one" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-one" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
               </div>
-              <!-- Controls -->
-              <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
             </div>
           </div>
         </div>
-      </div>
-      <div class="blog-app col-xs-12 col-sm-4">
-        <div class="overlay-container">
-          <img src="../images/travelblog.png" />
-          <div class="overlay">
-            <p>All Things Travel</p>
-            <p>Tech Stack</p>
-            <ul>
-              <li>Backbone.js</li>
-              <li>Parse JavaScript SDK</li>
-              <li>jQuery</li>
-              <li>Underscore</li>
-              <li>Bourbon/Neat</li>
-              <li>Sass</li>
-            </ul>
+        <div class="blog-app col-xs-12 col-sm-4">
+          <div class="overlay-container">
+            <img src="../images/travelblog.png" />
+            <div class="overlay">
+              <div id="carousel-two" class="carousel slide slider" data-ride="carousel" data-interval="false">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-two" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-two" data-slide-to="1"></li>
+                  <li data-target="#carousel-two" data-slide-to="2"></li>
+                  <li data-target="#carousel-two" data-slide-to="3"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <p>All Things Travel</p>
+                  </div>
+                  <div class="item">
+                    <p>This app was cool</p>
+                  </div>
+                  <div class="item">
+                    <ul>
+                      <li>Backbone.js</li>
+                      <li>Parse JavaScript SDK</li>
+                      <li>jQuery</li>
+                      <li>Underscore</li>
+                      <li>Bourbon/Neat</li>
+                      <li>Sass</li>
+                    </ul>
+                  </div>
+                  <div class="item">
+                    <p>See code</p>
+                    <p>See live</p>
+                  </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-two" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-two" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="fns-app col-xs-12 col-sm-4">
-        <div class="overlay-container">
-          <img src="../images/fns.png" />
-          <div class="overlay">
-            <p>Fork &amp; Spoon</p>
-            <p>Tech Stack</p>
-            <ul>
-              <li>jQuery</li>
-              <li>Underscore</li>
-              <li>Google Maps API</li>
-              <li>Flickr API</li>
-              <li>Custom Apiary API</li>
-              <li>Bourbon/Neat/Bitters</li>
-              <li>Sass</li>
-            </ul>
+        <div class="fns-app col-xs-12 col-sm-4">
+          <div class="overlay-container">
+            <img src="../images/fns.png" />
+            <div class="overlay">
+              <div id="carousel-three" class="carousel slide slider" data-ride="carousel" data-interval="false">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-three" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-three" data-slide-to="1"></li>
+                  <li data-target="#carousel-three" data-slide-to="2"></li>
+                  <li data-target="#carousel-three" data-slide-to="3"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <p>Fork &amp; Spoon</p>
+                  </div>
+                  <div class="item">
+                    <p>This app was cool</p>
+                  </div>
+                  <div class="item">
+                    <ul>
+                      <li>jQuery</li>
+                      <li>Underscore</li>
+                      <li>Google Maps API</li>
+                      <li>Flickr API</li>
+                      <li>Custom Apiary API</li>
+                      <li>Bourbon/Neat/Bitters</li>
+                      <li>Sass</li>
+                    </ul>
+                  </div>
+                  <div class="item">
+                    <p>See code</p>
+                    <p>See live</p>
+                  </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-three" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-three" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="game-app col-xs-12 col-sm-4">
-        <div class="overlay-container">
-          <img src="../images/thearena.png" />
-          <div class="overlay">
-            <p>The Arena</p>
-            <p>Tech Stack</p>
-            <ul>
-              <li>jQuery</li>
-              <li>Underscore</li>
-              <li>Sass</li>
-            </ul>
+        <div class="game-app col-xs-12 col-sm-4">
+          <div class="overlay-container">
+            <img src="../images/thearena.png" />
+            <div class="overlay">
+              <div id="carousel-four" class="carousel slide slider" data-ride="carousel" data-interval="false">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-four" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-four" data-slide-to="1"></li>
+                  <li data-target="#carousel-four" data-slide-to="2"></li>
+                  <li data-target="#carousel-four" data-slide-to="3"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <p>The Arena</p>
+                  </div>
+                  <div class="item">
+                    <p>This app was cool</p>
+                  </div>
+                  <div class="item">
+                    <ul>
+                      <li>jQuery</li>
+                      <li>Underscore</li>
+                      <li>Sass</li>
+                    </ul>
+                  </div>
+                  <div class="item">
+                    <p>See code</p>
+                    <p>See live</p>
+                  </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-four" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-four" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="todo-app col-xs-12 col-sm-4">
-        <div class="overlay-container">
-          <img src="../images/todo.png" />
-          <div class="overlay">
-            <p>Do Your Chores</p>
-            <p>Tech Stack</p>
-            <ul>
-              <li>jQuery</li>
-              <li>Underscore</li>
-              <li>Mocha</li>
-              <li>Bourbon/Neat/Bitters</li>
-              <li>Sass</li>
-            </ul>
+        <div class="todo-app col-xs-12 col-sm-4">
+          <div class="overlay-container">
+            <img src="../images/todo.png" />
+            <div class="overlay">
+              <div id="carousel-five" class="carousel slide slider" data-ride="carousel" data-interval="false">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-five" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-five" data-slide-to="1"></li>
+                  <li data-target="#carousel-five" data-slide-to="2"></li>
+                  <li data-target="#carousel-five" data-slide-to="3"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <p>Do Your Chores</p>
+                  </div>
+                  <div class="item">
+                    <p>This app was cool</p>
+                  </div>
+                  <div class="item">
+                    <ul>
+                      <li>jQuery</li>
+                      <li>Underscore</li>
+                      <li>Mocha</li>
+                      <li>Bourbon/Neat/Bitters</li>
+                      <li>Sass</li>
+                    </ul>
+                  </div>
+                  <div class="item">
+                    <p>See code</p>
+                    <p>See live</p>
+                  </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-five" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-five" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="snp-app col-xs-12 col-sm-4">
-        <div class="overlay-container">
-          <img src="../images/snp.png" />
-          <div class="overlay">
-            <p>Surf &amp; Paddle</p>
-            <p>Tech Stack</p>
-            <ul>
-              <li>Sass</li>
-            </ul>
+        <div class="snp-app col-xs-12 col-sm-4">
+          <div class="overlay-container">
+            <img src="../images/snp.png" />
+            <div class="overlay">
+              <div id="carousel-six" class="carousel slide slider" data-ride="carousel" data-interval="false">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel-six" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel-six" data-slide-to="1"></li>
+                  <li data-target="#carousel-six" data-slide-to="2"></li>
+                  <li data-target="#carousel-six" data-slide-to="3"></li>
+                </ol>
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                  <div class="item active">
+                    <p>Surf &amp; Paddle</p>
+                  </div>
+                  <div class="item">
+                    <p>This app was cool</p>
+                  </div>
+                  <div class="item">
+                    <ul>
+                      <li>Sass</li>
+                    </ul>
+                  </div>
+                  <div class="item">
+                    <p>See code</p>
+                    <p>See live</p>
+                  </div>
+                </div>
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-six" role="button" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-six" role="button" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

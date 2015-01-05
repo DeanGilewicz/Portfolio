@@ -171,7 +171,7 @@ body {
       font-size: 7em;
       font-weight: 700;
     }
-    .tech {
+    .tech-content {
       position: relative;
       margin-bottom: 150px;
       img {
@@ -213,26 +213,20 @@ body {
       border-top: 2px solid white;
       border-bottom: 2px solid white;
     }
-    p {
-      font-size: 4em;
-    }
-    .myPlanit-app {
-      @include work;
-    }
-    .blog-app {
-      @include work;
-    }
-    .fns-app {
-      @include work;
-    }
-    .game-app {
-      @include work;
-    }
-    .todo-app {
-      @include work;
-    }
-    .snp-app {
-      @include work;
+    .work-content {
+      overflow: auto;
+      margin-bottom: 100px;
+      p {
+        font-size: 4em;
+      }
+      .myPlanit-app,
+      .blog-app,
+      .fns-app,
+      .game-app,
+      .todo-app,
+      .snp-app {
+        @include work;
+      }
     }
   }
   .contact-container {
