@@ -2,12 +2,15 @@ $font: 'Arvo', sans-serif;
 $fontBody: 'Lato', serif;
 
 @mixin work() {
-  border: 1px solid white;
-  // margin: 5% 2.75% 8% 2.75%;
-  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  .overlay-container {
+    position: relative;
+  }
   img {
     width: 100%;
-    border: 2px solid blue;
+    padding: 4%;
+    border: 1px solid white;
   }
   .overlay {
     position: absolute;
