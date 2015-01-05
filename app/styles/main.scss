@@ -36,6 +36,7 @@ $fontBody: 'Lato', serif;
   }
   &:hover .overlay {
     opacity: 1;
+    border: 1px solid white;
   }
 }
 body {
