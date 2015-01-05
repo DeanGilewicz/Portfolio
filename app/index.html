@@ -74,7 +74,7 @@
             </div>
           </li>
         </ul>
-        <p><a href="#me"><i class="fa fa-angle-double-down"></i></a></p>
+        <p><a href="#me"><i class="fa fa-angle-down"></i></a></p>
       </div>
     </section>
     <section class="me-container col-xs-12" id="me">
@@ -118,27 +118,36 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                   <div class="item active">
-                    <h5>myPlanit</h5>
+                    <div class="carousel-content">
+                      <h5>myPlanit</h5>
+                    </div>
                   </div>
                   <div class="item">
-                    <p>Allows users to create an itinerary of things to do based on the time they have available in a location chosen by them to make the most use out of their time. Users create an account, search for points of interest (poi) and add to their plan. Travel time and directions are generated and subtracted from allocated time given by user. User can determine time to spend at each poi out of remianing time available. Users can save, edit, delete, or post their plans and view others.</p>
+                    <div class="carousel-content">
+                      <p>Allows users to create an itinerary of things to do based on the time they have available in a location chosen by them to make the most use out of their time. Users create an account, search for points of interest (poi) and add to their plan. Travel time and directions are generated and subtracted from allocated time given by user. User can determine time to spend at each poi out of remianing time available. Users can save, edit, delete, or post their plans and view others.</p>
+                    </div>
                   </div>
                   <div class="item">
-                    <ul>
-                      <li>Angular.js</li>
-                      <li>jQuery</li>
-                      <li>Underscore</li>
-                      <li>Parse</li>
-                      <li>Foursquare API</li>
-                      <li>Google Maps API</li>
-                      <li>Google Directions API</li>
-                      <li>Foundation</li>
-                      <li>Sass</li>
-                    </ul>
+                    <div class="carousel-content">
+                      <ul>
+                        <li>Angular.js</li>
+                        <li>jQuery</li>
+                        <li>Underscore</li>
+                        <li>Parse</li>
+                        <li>Foursquare API</li>
+                        <li>Google Maps API</li>
+                        <li>Google Directions API</li>
+                        <li>Foundation</li>
+                        <li>Sass</li>
+                      </ul>
+                    </div>
                   </div>
                   <div class="item">
-                    <p>See code</p>
-                    <p>See live</p>
+                    <div class="carousel-content">
+                      <p><i class="fa fa-eye"></i><i class="fa fa-eye"></i></p>
+                      <a href="https://github.com/DeanGilewicz/myPlanit" target="_blank"><button>code</button></a>
+                      <a href="http://deangilewicz.github.io/myPlanit" target="_blank"><button>live</button></a>
+                    </div>
                   </div>
                 </div>
                 <!-- Controls -->
@@ -389,49 +398,35 @@
       </div>
     </section>
     <section class="contact-container" id="contact">
-      <h2>CONTACT</h2>
+      <h2>Get In Touch</h2>
       <p>
         I am motivated by environments where people care about what they do,
         take pride in their performance and work hard but enjoy life.
       </p>
+      <div class="icons">
+        <a href=""><i class="fa fa-file-text-o"></i></a>
+        <a href="mailto:gilewiczd@gmail.com?Subject=Possible%20Opportunity" target="_top"><i class="fa fa-envelope-o"></i>
+        <a href="tel:7703598273"><i class="fa fa-phone"></i></a>
+      </div>
       <div class="contact">
-        <div class="tablet col-md-4">
+        <div class="tablet col-md-6">
           <div class="tablet-container">
             <img src="../images/tablet.png" alt="picture of a tablet" />
             <div class="tablet-content">
-              <p>Check out my GitHub</p>
-              <a href="https://github.com/DeanGilewicz" target="_blank"><img src="../images/github.png" alt="github icon" /></a>
-            </div>
-          </div>
-        </div>
-        <div class="desktop col-md-4">
-          <div class="desktop-container">
-            <img src="../images/desktop.png" alt="picture of a desktop" />
-            <div class=" col-md-12">
-              <h5>Me</h5>
-              <div class="more-content">
-                <img src="../images/me.png" />
-                <p>
-                  Born and raised in England, football/soccer has been a big part of my life. Win, lose, or draw, I support Tottenham Hotspur FC.
-                  I also love to travel - my wife and I are currently on a journey to see the 7 modern wonders of the world. Next up is to step foot on all continents of the world.
-                </p>
-              </div>
-            </div>
-            <div class="desktop-content">
-              <p>Give me a shout</p>
               <ul>
-                <li><a href="mailto:gilewiczd@gmail.com?Subject=Possible%20Opportunity" target="_top"><img src="../images/email.png" alt="email icon" /></a></li>
-                <li><a href="tel:7703598273"><i class="fa fa-phone"></i></a></li>
-              </ul>
+                <li><a href="mailto:gilewiczd@gmail.com?Subject=Possible%20Opportunity" target="_top"><i class="fa fa-envelope-o"></i></li>
+                  <li><a href="tel:7703598273"><i class="fa fa-phone"></i></a></li>
+                </ul>
             </div>
           </div>
         </div>
-        <div class="smartphone col-md-4">
+        <div class="smartphone col-md-6">
           <div class="smartphone-container">
             <img src="../images/smartphone.png" alt="picture of a smartphone" />
             <div class="smartphone-content">
               <p>View my resume</p>
-              <a href="resume.pdf" target="_blank"><img src="../images/resume.png" alt="resume icon" /></a>
+              <a href="resume.pdf" target="_blank"><i class="fa fa-file-pdf-o"></i>pdf</a>
+              <a href=""><i class="fa fa-file-text-o"></i>online</a>
             </div>
           </div>
         </div>
@@ -446,8 +441,6 @@
         <li><a href="https://www.linkedin.com/home?trk=nav_responsive_tab_home"target="_blank"><i class="fa fa-linkedin"></i></a></li>
       </ul>
     </footer>
-
-    <a href="projects.html"></h1>Projects</h1></a>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
