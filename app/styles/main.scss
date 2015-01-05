@@ -24,14 +24,31 @@ $fontBody: 'Lato', serif;
     font-size: 2.5em;
     font-family: $fontBody;
     font-weight: 400;
-    p {
-      color: #fff;
-      font-size: 2em;
-      font-weight: 700;
-      padding-top: 13%;
-    }
-    a {
-      color: #fff;
+    .slider {
+      padding: 0px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      .carousel-control {
+        background-image: none;
+      }
+      .carousel-indicators {
+        margin-bottom: 8px;
+      }
+      .item {
+        padding: 25% 10% 25% 10%;
+      }
+      p {
+        color: #fff;
+        font-size: 2em;
+        font-weight: 700;
+        padding-top: 13%;
+      }
+      a {
+        color: #fff;
+      }
     }
   }
   &:hover .overlay {
