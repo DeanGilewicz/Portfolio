@@ -1,8 +1,9 @@
-$font: 'Lato', sans-serif;
-$fontBody: 'Arvo', serif;
+$font: 'Arvo', sans-serif;
+$fontBody: 'Lato', serif;
 
 @mixin work() {
-  border: 1px solid black;
+  border: 1px solid white;
+  // margin: 5% 2.75% 8% 2.75%;
   position: relative;
   img {
     width: 100%;
@@ -14,7 +15,7 @@ $fontBody: 'Arvo', serif;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #222222;
     transition: .6s ease;
     opacity: 0;
     font-size: 2.5em;
@@ -36,8 +37,8 @@ $fontBody: 'Arvo', serif;
 }
 body {
   position: relative;
-  background: #fff;
-  color: #111;
+  background: #000;
+  color: #808080;
   font-family: $font;
   font-size: 62.5%;
   .navbar {
@@ -54,9 +55,10 @@ body {
     padding: 0px;
     overflow: hidden;
     height: 100vh;
-    background-image: url('../images/main.png');
+    background-image: url('../images/main2.png');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: fixed;
     .name-container {
       width: 80%;
       margin: 0 auto;
@@ -69,6 +71,7 @@ body {
         line-height: 1;
         font-size: 14em;
         font-weight: 900;
+        color: #337ab7;
       }
       p {
         border: 1px solid red;
@@ -119,20 +122,18 @@ body {
   .me-container {
     clear: both;
     overflow: auto;
-    padding: 50px 0px 50px 0px;
-    background-color: gray;
+    background-color: #F5F5F5;
     text-align: center;
-    border: 1px solid blue;
     line-height: 1.5;
     h2 {
+      margin: 150px auto 40px auto;
       font-size: 7em;
       font-weight: 700;
-      margin: 20px 0px 50px 0px;
     }
     .me {
-      border: 1px solid red;
+      margin-bottom: 150px;
       p {
-        width: 85%;
+        width: 60%;
         margin: 0 auto;
         font-family: $fontBody;
         font-size: 3.2em;
@@ -142,22 +143,19 @@ body {
   .tech-container {
     clear: both;
     overflow: auto;
-    padding: 50px 0px 50px 0px;
-    background-color: green;
+    background-color: #FFF;
     text-align: center;
-    border: 1px solid blue;
-    line-height: 1.5;
     h2 {
+      margin: 100px auto 60px auto;
       font-size: 7em;
       font-weight: 700;
-      margin: 20px 0px 50px 0px;
     }
     .tech {
       position: relative;
-      border: 1px solid red;
+      margin-bottom: 150px;
       img {
         width: 40%;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
       }
       .pic-overlay {
         position: absolute;
@@ -169,31 +167,30 @@ body {
         opacity: 0;
       }
       p {
-        width: 85%;
+        width: 75%;
         margin: 0px auto;
         font-family: $fontBody;
         font-size: 3.2em;
       }
-      &:hover .pic-overlay {
-        opacity: 1;
-      }
+    }
+    &:hover .pic-overlay {
+      opacity: 1;
     }
   }
   .work-container {
     clear: both;
     overflow: auto;
-    padding: 50px 0px 50px 0px;
-    background-color: #F3F3F4;
+    background-color: #363636;
     text-align: center;
     border: 1px solid red;
     font-weight: 700;
-    div {
-      padding: 1% 5% 1% 5%;
-    }
     h2 {
       font-size: 7em;
       font-weight: 700;
-      margin: 20px 0px 50px 0px;
+      margin: 100px auto 100px auto;
+      padding: 20px 0px;
+      border-top: 2px solid white;
+      border-bottom: 2px solid white;
     }
     p {
       font-size: 4em;
@@ -221,7 +218,7 @@ body {
     clear: both;
     overflow: auto;
     padding: 50px 0px 50px 0px;
-    background-color: #F3F3F4;
+    background-color: #A6A6A6;
     text-align: center;
     border: 1px solid red;
     font-weight: 700;
@@ -346,7 +343,7 @@ body {
   }
   .footer-container {
     clear: both;
-    background-color: #9E9E9E;
+    background-color: #000;
     border: 1px solid red;
     width: 100%;
     text-align: center;
