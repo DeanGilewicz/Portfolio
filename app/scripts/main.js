@@ -1,3 +1,18 @@
+// $(function () {
+//   var $header = $("#header");
+//   var header = ['Front End Developer', 'Keen Traveler', 'Soccer Enthusiast'];
+//   var position = -1;
+//
+//   (function loop() {
+//     position = (position + 1) % header.length;
+//     $header.html(header[position])
+//       .fadeIn(1000)
+//       .delay(2000)
+//       .fadeOut(1000, loop);
+//   })();
+// });
+
+
 
 // $('.male').on('click', function () {
 //   $('.social').toggleClass('toggle-show');
