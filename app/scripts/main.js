@@ -1,3 +1,5 @@
+
+// sets an array to be looped through continuously
 // $(function () {
 //   var $header = $("#header");
 //   var header = ['Front End Developer', 'Keen Traveler', 'Soccer Enthusiast'];
@@ -18,6 +20,7 @@
 //   $('.social').toggleClass('toggle-show');
 // });
 
+// position the slide in below at exact height to replace current content on hover
 $(function() {
   $(".wrap").hover(function() {
     $(this).stop().animate({ top:"-33px" },{ queue:false, duration:200 });
@@ -26,6 +29,12 @@ $(function() {
   });
 });
 
+// resets the carousel slider when move cursor out from overlay and pauses so doesn't auto cycle
+$(function() {
+  $('.overlay').mouseleave(function() {
+    $(this).carousel(0).carousel('pause');
+  });
+});
 //scrolls to targeted id
 // $('body').scrollspy({ target: '.navbar-fixed-top' });
 //
