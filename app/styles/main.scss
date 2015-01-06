@@ -1,5 +1,21 @@
+
+/***********************************************************
+************************************************************
+
+                            FONTS
+
+/***********************************************************/
+
 $font: 'Open Sans', sans-serif;
 $fontBody: 'Lato', serif;
+
+
+/***********************************************************
+************************************************************
+
+                            MIXINS
+
+/***********************************************************/
 
 @mixin work() {
   padding-top: 30px;
@@ -34,43 +50,54 @@ $fontBody: 'Lato', serif;
         .carousel-indicators {
           margin-bottom: 0px;
         }
-        .item {
-
-        }
-        .carousel-content {
-
-        }
-        h5 {
-          font-family: $fontBody;
-          font-size: 4em;
-          font-weight: 700;
-          color: #fff;
-        }
-        p {
-          font-family: $fontBody;
-          font-size: 2.2em;
-          font-weight: 400;
-          color: #fff;
-          i {
-            font-size: 4em;
-          }
-        }
-        ul {
-          padding: 0px;
-          li {
-            list-style-type: none;
-            font-family: $fontBody;
-            font-size: 2.2em;
-            font-weight: 400;
-            color: #fff;
-          }
-        }
-        a {
-          font-family: $fontBody;
-          font-size: 2.2em;
-          font-weight: 400;
-          button {
-            width: 20%;
+        .carousel-inner {
+          border: 1px solid red;
+          height: 100%;
+          .item {
+            border: 1px solid red;
+            height: 100%;
+            padding: 9%;
+            overflow: auto;
+            h5 {
+              font-family: $fontBody;
+              font-size: 4em;
+              font-weight: 700;
+              color: #fff;
+            }
+            p {
+              font-family: $fontBody;
+              font-size: 2.2em;
+              font-weight: 400;
+              color: #fff;
+              i {
+                font-size: 2.5em;
+                margin-top: 18%;
+              }
+            }
+            ul {
+              padding: 0px;
+              li {
+                list-style-type: none;
+                font-family: $fontBody;
+                font-size: 2.2em;
+                font-weight: 400;
+                color: #fff;
+              }
+            }
+            a {
+              font-size: 4em;
+              font-weight: 400;
+              text-decoration: none;
+              color: #337ab7;
+              button {
+                width: 50%;
+                margin: 10% auto;
+                background-color: #fff;
+                &:hover {
+                  border: 1px solid #337ab7;
+                }
+              }
+            }
           }
         }
       }
@@ -82,6 +109,13 @@ $fontBody: 'Lato', serif;
     }
   }
 }
+
+/***********************************************************
+************************************************************
+
+                            CUSTOM STYLES
+
+/***********************************************************/
 body {
   position: relative;
   background: #000;
@@ -113,10 +147,10 @@ body {
     .name-container {
       width: 80%;
       margin: 0 auto;
-      padding: 13% 0% 0% 0%;
+      padding: 1% 0% 0% 0%;
       text-align: center;
       h1 {
-        margin: 0% auto 3% auto;
+        margin: 12% auto 3% auto;
         line-height: 1;
         font-size: 14em;
         font-weight: 900;
@@ -128,7 +162,6 @@ body {
         font-size: 8em;
         font-weight: 700;
         color: #337ab7;
-        // text-shadow: 1px 1px #fff;
         &:last-child {
           padding: 2% 0% 2% 0%;
           i {
@@ -195,7 +228,6 @@ body {
       font-weight: 600;
     }
     .tech-content {
-      border: 1px solid red;
       position: relative;
       margin-bottom: 150px;
       img {
@@ -326,6 +358,13 @@ body {
   }
 }
 
+/***********************************************************
+************************************************************
+
+                            ANIMATION
+
+/***********************************************************/
+
 // animated elements base settings
 .animateblock {
   opacity: 0;
@@ -337,14 +376,47 @@ body {
   opacity: 1;
 }
 
+/***********************************************************
+************************************************************
 
-/* Media Queries */
+                            MEDIA QUERIES
+
+/***********************************************************/
 
 /* Extra small devices (phones, less than 768px) */
 @media screen and (max-width: 767px), any screen and (max-device-width: 767px) {
+
+  .name-container {
+    h1 {
+      font-size: 10em !important;
+    }
+    #header {
+      font-size: 6em !important;
+    }
+    p:last-child i {
+      font-size: 2em !important;
+    }
+    li {
+      font-size: 5em !important;
+      &:hover {
+        font-size: 5.8em !important;
+      }
+    }
+  }
+
   .skills img {
       width: 80% !important;
     }
+
+    .myPlanit-app,
+    .blog-app,
+    .fns-app,
+    .game-app,
+    .todo-app,
+    .snp-app {
+      padding: 10% !important;
+    }
+
 }
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-device-width: 768px) and (max-device-width: 991px) {
@@ -360,82 +432,3 @@ body {
 @media only screen and (min-device-width: 1200px) {
 
 }
-
-
-
-/* animation transition styles */
-// .animateblock.left {
-//   margin-left: -2%;
-// }
-// .animateblock.left.animated {
-//   margin-left: 12%;
-// }
-//
-// .animateblock.right {
-//   display: block;
-//   margin-left: 100%;
-// }
-// .animateblock.right.animated {
-//   margin-left: 70%;
-// }
-//
-// .animateblock.top {
-//   display: block;
-//   width: auto;
-//   text-align: center;
-//   margin-top: -25px;
-// }
-// .animateblock.top.animated {
-//   margin-top: 0px;
-// }
-//
-// .animateblock.btm {
-//   display: block;
-//   width: auto;
-//   text-align: center;
-//   margin-top: 25px;
-// }
-// .animateblock.btm.animated {
-//   margin-top: 0;
-// }
-//
-// .animateblock.centerleft {
-//   display: block;
-//   width: auto;
-//   text-align: center;
-//   margin-right: -10%;
-// }
-// .animateblock.centerleft.animated {
-//   margin-right: 0;
-// }
-//
-// .animateblock.centerright {
-//   display: block;
-//   width: auto;
-//   text-align: center;
-//   margin-left: -10%;
-// }
-// .animateblock.centerright.animated {
-//   margin-left: 0;
-// }
-//
-// .animateblock.center {
-//   margin-left: 0%;
-// }
-// .animateblock.center.animated {
-//   margin-left: 0%;
-// }
-//
-// .animateblock.size {
-//   display: block;
-//   width: 10%;
-//   text-align: center;
-// }
-// .animateblock.size.animated {
-//   width: 100%;
-//   height: 100%;
-// }
-// .animateblock.size img {
-//   max-width: 100%;
-//   height: auto;
-// }
