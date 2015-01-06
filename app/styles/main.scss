@@ -34,39 +34,43 @@ $fontBody: 'Lato', serif;
         .carousel-indicators {
           margin-bottom: 0px;
         }
+        .item {
+
+        }
         .carousel-content {
-          h5 {
-            font-family: $fontBody;
+
+        }
+        h5 {
+          font-family: $fontBody;
+          font-size: 4em;
+          font-weight: 700;
+          color: #fff;
+        }
+        p {
+          font-family: $fontBody;
+          font-size: 2.2em;
+          font-weight: 400;
+          color: #fff;
+          i {
             font-size: 4em;
-            font-weight: 700;
-            color: #fff;
           }
-          p {
+        }
+        ul {
+          padding: 0px;
+          li {
+            list-style-type: none;
             font-family: $fontBody;
             font-size: 2.2em;
             font-weight: 400;
             color: #fff;
-            i {
-              font-size: 4em;
-            }
           }
-          ul {
-            padding: 0px;
-            li {
-              list-style-type: none;
-              font-family: $fontBody;
-              font-size: 2.2em;
-              font-weight: 400;
-              color: #fff;
-            }
-          }
-          a {
-            font-family: $fontBody;
-            font-size: 2.2em;
-            font-weight: 400;
-            button {
-              width: 20%;
-            }
+        }
+        a {
+          font-family: $fontBody;
+          font-size: 2.2em;
+          font-weight: 400;
+          button {
+            width: 20%;
           }
         }
       }
@@ -319,6 +323,29 @@ body {
 .animateblock.animated {
   opacity: 1;
 }
+
+/* Media Queries */
+
+/* Extra small devices (phones, less than 768px) */
+@media only screen and (max-device-width: 767px) {
+
+}
+/* Small devices (tablets, 768px and up) */
+@media only screen and (min-device-width: 768px) and (max-device-width: 991px) {
+
+
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-device-width: 992px) and (max-device-width: 1199px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media only screen and (min-device-width: 1200px) {
+
+}
+
 
 
 /* animation transition styles */
