@@ -1,4 +1,4 @@
-$font: 'Arvo', sans-serif;
+$font: 'Open Sans', sans-serif;
 $fontBody: 'Lato', serif;
 
 @mixin work() {
@@ -98,6 +98,9 @@ body {
         float: left;
       }
     }
+    .navbar-nav a:hover {
+      color: #fff;
+    }
   }
   .title-area {
     padding: 0px;
@@ -118,7 +121,6 @@ body {
         font-size: 14em;
         font-weight: 900;
         color: #fff;
-        // text-shadow: 5px 5px #337ab7;
       }
       p {
         margin: 0% 0% 4% 0%;
@@ -141,10 +143,21 @@ body {
         text-align: center;
         li {
           display: inline-block;
-          margin: 0% 8% 0% 8%;
+          margin: 0% 6% 0% 6%;
           font-size: 6em;
+          .fa {
+            display: block;
+            float: left;
+            height: 44px;
+            width: 44px;
+            overflow: hidden;
+            text-align: center;
+          }
           a {
             color: #fff;
+          }
+          &:hover {
+            font-size: 6.8em;
           }
         }
       }
@@ -159,7 +172,7 @@ body {
     h2 {
       margin: 150px auto 40px auto;
       font-size: 7em;
-      font-weight: 700;
+      font-weight: 600;
     }
     .me {
       margin-bottom: 150px;
@@ -179,14 +192,14 @@ body {
     h2 {
       margin: 100px auto 60px auto;
       font-size: 7em;
-      font-weight: 700;
+      font-weight: 600;
     }
     .tech-content {
+      border: 1px solid red;
       position: relative;
       margin-bottom: 150px;
       img {
         width: 40%;
-        margin-bottom: 50px;
       }
       .pic-overlay {
         position: absolute;
@@ -199,12 +212,12 @@ body {
       }
       p {
         width: 75%;
-        margin: 0px auto;
+        margin: 50px auto 0px auto;
         font-family: $fontBody;
         font-size: 3.2em;
       }
     }
-    &:hover .pic-overlay {
+    .skills:hover .pic-overlay {
       opacity: 1;
     }
   }
@@ -215,7 +228,7 @@ body {
     text-align: center;
     h2 {
       font-size: 7em;
-      font-weight: 700;
+      font-weight: 600;
       margin: 100px auto 70px auto;
       padding: 20px 0px;
       border-top: 2px solid white;
@@ -239,7 +252,7 @@ body {
     overflow: auto;
     background-color: #F5F5F5;
     text-align: center;
-    font-weight: 700;
+    font-weight: 600;
     background-image: url('../images/me.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -324,15 +337,17 @@ body {
   opacity: 1;
 }
 
+
 /* Media Queries */
 
 /* Extra small devices (phones, less than 768px) */
-@media only screen and (max-device-width: 767px) {
-
+@media screen and (max-width: 767px), any screen and (max-device-width: 767px) {
+  .skills img {
+      width: 80% !important;
+    }
 }
 /* Small devices (tablets, 768px and up) */
 @media only screen and (min-device-width: 768px) and (max-device-width: 991px) {
-
 
 }
 
