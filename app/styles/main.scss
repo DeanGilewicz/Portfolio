@@ -113,13 +113,16 @@ body {
         line-height: 1;
         font-size: 14em;
         font-weight: 900;
-        color: #337ab7;
+        color: #fff;
+        // text-shadow: 5px 5px #337ab7;
       }
       p {
         margin: 0% 0% 4% 0%;
         font-family: $fontBody;
         font-size: 8em;
         font-weight: 700;
+        color: #337ab7;
+        // text-shadow: 1px 1px #fff;
         &:last-child {
           padding: 2% 0% 2% 0%;
           i {
@@ -136,6 +139,9 @@ body {
           display: inline-block;
           margin: 0% 8% 0% 8%;
           font-size: 6em;
+          a {
+            color: #fff;
+          }
         }
       }
     }
@@ -302,7 +308,6 @@ body {
     }
   }
 }
-
 
 // animated elements base settings
 .animateblock {

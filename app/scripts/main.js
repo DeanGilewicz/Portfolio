@@ -3,27 +3,23 @@
 // set to allow for change of name and font color
 // $(function () {
 //   var $header = $("#header");
-//   var header = ['Front End Developer', 'Keen Traveler', 'Front End Developer', 'Soccer Enthusiast'];
-//   var color = ['red', 'blue', 'green', 'white'];
+//   var header = ['Front End Developer', 'Keen Traveler', 'Front End Developer', 'Soccer Enthusiast', 'Front End Developer'];
+//   var color = ['#337ab7', 'red', 'yellow'];
 //   var position = -1;
 //
 //   (function loop() {
 //     position = (position + 1) % header.length;
-//     // $header.css('color', color)
-//     //   .fadeIn(1000)
-//     //   .delay(2000)
-//     //   .fadeOut(1000);
 //     $header.html(header[position]).css('color', color[position])
-//       .fadeIn(1000)
+//       .fadeIn(0000)
 //       .delay(2000)
-//       .fadeOut(1000, loop);
+//       .fadeOut(0000, loop);
 //   })();
 // });
 
-// Performs a smooth page scroll to anchor on same page
-// Set up for all a href links
+// on click performs a smooth page scroll to anchor on same page
+// set up for all a href links except the link for top
 $(function() {
-  $('a[href*=#]:not([href=#top])').click(function() {
+  $('a[href*=#]:not([href=carousel-one]):not(.carousel-control)').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
       || location.hostname == this.hostname) {
         var target = $(this.hash);
@@ -38,18 +34,15 @@ $(function() {
   });
 });
 
-
-
-
-
-// resets the carousel slider when move cursor out from overlay and pauses so doesn't auto cycle
+// resets the carousel slider when move cursor out from overlay
+// also pauses so doesn't auto cycle
 $(function() {
   $('.overlay').mouseleave(function() {
     $(this).carousel(0).carousel('pause');
   });
 });
 
-// position the slide in below at exact height to replace current content on hover
+// position the slide in below effect at exact height to replace current content on hover
 $(function() {
   $(".wrap").hover(function() {
     $(this).stop().animate({ top:"-60px" },{ queue:false, duration:200 });
@@ -58,12 +51,8 @@ $(function() {
   });
 });
 
-
-
-
-
 // runs animation based on window scroll
-$(function(){
+$(function() {
   var $elems = $('.animateblock');
   var winheight = $(window).height();
   var fullheight = $(document).height();
@@ -75,19 +64,15 @@ $(function(){
 
   function animate_elems() {
     wintop = $(window).scrollTop(); // calculate distance from top of window
-
     // loop through each item to check when it animates
-    $elems.each(function(){
+    $elems.each(function() {
       $elm = $(this);
-
       if($elm.hasClass('animated')) { return true; } // if already animated skip to the next one
-
         topcoords = $elm.offset().top; // element's distance from top of page in pixels
-
         if(wintop > (topcoords - (winheight*.75))) {
           // animate when top of the window is 3/4 above the element
           $elm.addClass('animated');
         }
-      });
-    } // end animate_elems()
-  });
+    });
+  } // end animate_elems()
+});
