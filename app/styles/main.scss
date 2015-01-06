@@ -7,9 +7,10 @@ $fontBody: 'Lato', serif;
   .overlay-container {
     position: relative;
     background-color: #4C4C4C;
+    border-radius: 8px;
     img {
       width: 100%;
-      padding: 4%;
+      padding: 10%;
     }
     .overlay {
       position: absolute;
@@ -73,6 +74,7 @@ $fontBody: 'Lato', serif;
     &:hover .overlay {
       opacity: 1;
       border: 1px solid white;
+      border-radius: 8px;
     }
   }
 }
@@ -83,7 +85,8 @@ body {
   font-family: $font;
   font-size: 62.5%;
   .navbar {
-    background-color: black;
+    background-color: #000;
+    padding: 0% 1%;
     font-size: 3em;
     .container {
       width: 100%;
@@ -95,36 +98,45 @@ body {
   .title-area {
     padding: 0px;
     overflow: hidden;
-    height: 100vh;
+    height: 100%;
     background-image: url('../images/main2.png');
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    background-position: fixed;
     .name-container {
       width: 80%;
       margin: 0 auto;
-      padding: 15% 0% 15% 0%;
+      padding: 13% 0% 0% 0%;
       text-align: center;
-      border: 2px solid green;
       h1 {
-        margin: 0%;
-        border: 1px solid red;
+        margin: 0% auto 3% auto;
         line-height: 1;
         font-size: 14em;
         font-weight: 900;
         color: #337ab7;
       }
       p {
-        border: 1px solid red;
-        margin: 0%;
+        margin: 0% 0% 4% 0%;
+        font-family: $fontBody;
         font-size: 8em;
         font-weight: 700;
+        &:last-child {
+          padding: 2% 0%;
+          i {
+            font-size: 2em;
+          }
+        }
       }
       ul {
         padding: 0%;
         width: 80%;
         margin: 0% auto;
         text-align: center;
+        li {
+          display: inline-block;
+          margin: 0% 8% 0% 8%;
+          font-size: 6em;
+        }
       }
     }
   }
@@ -191,7 +203,6 @@ body {
     overflow: auto;
     background-color: #363636;
     text-align: center;
-    border: 1px solid red;
     h2 {
       font-size: 7em;
       font-weight: 700;
@@ -218,24 +229,25 @@ body {
     overflow: auto;
     background-color: #F5F5F5;
     text-align: center;
-    border: 1px solid red;
     font-weight: 700;
     background-image: url('../images/MeBWtrans.png');
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: contain;
-    background-position: bottom;
+    background-position: top;
     h2 {
       font-size: 7em;
       font-weight: 700;
-      margin: 120px auto 50px auto;
+      margin: 150px auto 80px auto;
     }
     p {
       width: 60%;
       margin: 0 auto;
       font-family: $fontBody;
       font-size: 3.2em;
+      line-height: 1.5;
       &:last-child {
-        margin-bottom: 120px;
+        margin-bottom: 10%;
       }
     }
     .icons {
@@ -283,7 +295,7 @@ body {
           .short {
             height: 80px;
             width: 100%;
-            font-size: 3.5em;
+            font-size: 4.5em;
           }
         }
       }
