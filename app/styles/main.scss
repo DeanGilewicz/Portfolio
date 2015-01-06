@@ -51,10 +51,8 @@ $fontBody: 'Lato', serif;
           margin-bottom: 0px;
         }
         .carousel-inner {
-          border: 1px solid red;
           height: 100%;
           .item {
-            border: 1px solid red;
             height: 100%;
             padding: 9%;
             overflow: auto;
@@ -277,12 +275,12 @@ body {
     .work-content {
       overflow: auto;
       margin-bottom: 70px;
-      .myPlanit-app,
-      .blog-app,
-      .fns-app,
-      .game-app,
-      .todo-app,
-      .snp-app {
+      .project-one,
+      .project-two,
+      .project-three,
+      .project-four,
+      .project-five,
+      .project-six {
         @include work;
       }
     }
@@ -416,12 +414,12 @@ body {
       width: 80% !important;
     }
 
-    .myPlanit-app,
-    .blog-app,
-    .fns-app,
-    .game-app,
-    .todo-app,
-    .snp-app {
+    .project-one,
+    .project-two,
+    .project-three,
+    .project-four,
+    .project-five,
+    .project-six {
       padding: 10% !important;
     }
 
