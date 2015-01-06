@@ -6,6 +6,7 @@ $fontBody: 'Lato', serif;
   padding-bottom: 30px;
   .overlay-container {
     position: relative;
+    background-color: #4C4C4C;
     img {
       width: 100%;
       padding: 4%;
@@ -124,38 +125,6 @@ body {
         width: 80%;
         margin: 0% auto;
         text-align: center;
-        .element {
-          position: relative;
-          overflow: hidden;
-          list-style-type: none;
-          display: inline-block;
-          margin: 0% 1% 0% 1%;
-          padding: 2% 0% 2% 0%;
-          width: 22%;
-          height: 30px;
-          vertical-align: center;
-          border: 2px solid darkgray;
-          .wrap {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            .init {
-              height: 30px;
-              width: 100%;
-              font-size: 2.8em;
-              background: lightgrey;
-            }
-            .short {
-              height: 40px;
-              width: 100%;
-              font-size: 3.3em;
-              background: black;
-              // a {
-              //   color: white;
-              // }
-            }
-          }
-        }
       }
     }
   }
@@ -226,14 +195,14 @@ body {
     h2 {
       font-size: 7em;
       font-weight: 700;
-      margin: 100px auto 100px auto;
+      margin: 100px auto 70px auto;
       padding: 20px 0px;
       border-top: 2px solid white;
       border-bottom: 2px solid white;
     }
     .work-content {
       overflow: auto;
-      margin-bottom: 100px;
+      margin-bottom: 70px;
       .myPlanit-app,
       .blog-app,
       .fns-app,
@@ -253,100 +222,70 @@ body {
     font-weight: 700;
     background-image: url('../images/MeBWtrans.png');
     background-repeat: no-repeat;
-    background-size: 20%;
+    background-size: contain;
     background-position: bottom;
     h2 {
       font-size: 7em;
       font-weight: 700;
-      margin: 100px auto 50px auto;
+      margin: 120px auto 50px auto;
     }
     p {
       width: 60%;
       margin: 0 auto;
       font-family: $fontBody;
       font-size: 3.2em;
+      &:last-child {
+        margin-bottom: 120px;
+      }
     }
     .icons {
       font-size: 5em;
-    }
-
-
-
-    .contact {
-      overflow: auto;
-      .tablet {
-        border: 1px solid red;
-        .tablet-container {
-          border: 2px solid blue;
-          img {
-            width: 35%;
-          }
-          .tablet-content {
-            padding-top: 20px;
-            border: 1px solid red;
-            p {
-              font-size: 2em;
-              font-weight: 400;
-            }
-            a {
-              color: black;
-            }
-            img {
-              border: 1px solid red;
-              width: 11%;
-              padding: 1%;
-            }
-          }
-        }
-      }
-      .smartphone {
-        border: 1px solid red;
-        .smartphone-container {
-          border: 2px solid blue;
-          img {
-            width: 18%;
-          }
-          .smartphone-content {
-            padding-top: 20px;
-            border: 1px solid red;
-            p {
-              font-size: 2em;
-              font-weight: 400;
-            }
-            a {
-              color: black;
-            }
-            img {
-              width: 12%;
-              padding: 0%;
-            }
-          }
-        }
+      i {
+        margin: 15px;
       }
     }
   }
   .footer-container {
     clear: both;
-    background-color: #000;
-    border: 1px solid red;
-    width: 100%;
     text-align: center;
-    padding: 20px 0px;
+    padding: 10px 0px;
     ul {
       width: 100%;
       padding: 0px;
       margin: 0px;
       text-align: center;
+      .arrow-top {
+        font-size: 8em;
+        padding: 0px;
+        height: 80px;
+      }
       .arrow-top a {
         color: red;
       }
       li {
-        display: inline-block;
-        width: 5%;
-        font-size: 4em;
+        position: relative;
+        overflow: hidden;
         list-style-type: none;
-        border: 1px solid red;
-        margin: 0px 7% 0px 7%;
+        display: inline-block;
+        margin: 0% 4% 0% 4%;
+        width: 10%;
+        height: 80px;
+        .wrap {
+          position: absolute;
+          top: 30px;
+          width: 100%;
+          color: #337AB7;
+          .init {
+            height: 80px;
+            width: 100%;
+            font-size: 2.5em;
+          }
+          .short {
+            height: 80px;
+            width: 100%;
+            font-size: 3.5em;
+          }
+        }
       }
     }
   }
