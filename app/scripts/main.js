@@ -39,9 +39,15 @@ $(function() {
 });
 
 
-// $('.male').on('click', function () {
-//   $('.social').toggleClass('toggle-show');
-// });
+
+
+
+// resets the carousel slider when move cursor out from overlay and pauses so doesn't auto cycle
+$(function() {
+  $('.overlay').mouseleave(function() {
+    $(this).carousel(0).carousel('pause');
+  });
+});
 
 // position the slide in below at exact height to replace current content on hover
 $(function() {
@@ -52,21 +58,36 @@ $(function() {
   });
 });
 
-// resets the carousel slider when move cursor out from overlay and pauses so doesn't auto cycle
-$(function() {
-  $('.overlay').mouseleave(function() {
-    $(this).carousel(0).carousel('pause');
+
+
+
+
+// runs animation based on window scroll
+$(function(){
+  var $elems = $('.animateblock');
+  var winheight = $(window).height();
+  var fullheight = $(document).height();
+  var $elm;
+
+  $(window).scroll(function(){
+    animate_elems();
   });
-});
-//scrolls to targeted id
-// $('body').scrollspy({ target: '.navbar-fixed-top' });
-//
-// //waypoint for animation
-// $('.cd-color-2').waypoint(function(direction) {
-//   $('.img-skill').removeClass('imgnone');
-//   $('.imgleft').addClass('animated bounceInLeft');
-//   $('.imgcenter').addClass('animated bounceIn');
-//   $('.imgright').addClass('animated bounceInRight');
-// }, {
-//   offset: '50%'
-// });
+
+  function animate_elems() {
+    wintop = $(window).scrollTop(); // calculate distance from top of window
+
+    // loop through each item to check when it animates
+    $elems.each(function(){
+      $elm = $(this);
+
+      if($elm.hasClass('animated')) { return true; } // if already animated skip to the next one
+
+        topcoords = $elm.offset().top; // element's distance from top of page in pixels
+
+        if(wintop > (topcoords - (winheight*.75))) {
+          // animate when top of the window is 3/4 above the element
+          $elm.addClass('animated');
+        }
+      });
+    } // end animate_elems()
+  });
