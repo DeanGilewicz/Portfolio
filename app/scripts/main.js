@@ -1,5 +1,6 @@
 // sets an array to be looped through continuously
 // set to allow for change of name and font color
+
 // $(function () {
 //   var $header = $("#header");
 //   var header = ['Front End Developer', 'Keen Traveler', 'Front End Developer', 'Soccer Enthusiast', 'Front End Developer'];
@@ -14,6 +15,7 @@
 //       .fadeOut(0000, loop);
 //   })();
 // });
+
 
 // on click performs a smooth page scroll to anchor on same page
 // set up for all a href links except the link for top

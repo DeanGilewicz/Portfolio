@@ -9,6 +9,27 @@
 $font: 'Open Sans', sans-serif;
 $fontBody: 'Lato', serif;
 
+/***********************************************************
+************************************************************
+
+                            COLORS
+
+/***********************************************************/
+$fontColorPrimary: #808080;
+
+$colorPrimary: #fff;
+$colorSecondary: #000;
+$colorTertiary: #337ab9;
+
+$colorLinks1: #fff;
+$colorLinks2: #337ab9;
+
+$bgColor1: #fff;
+$bgColor2: #363636;
+$bgColor3: #F5F5F5;
+
+$bgOverlay1: #4C4C4C;
+$bgOverlay2: #222222;
 
 /***********************************************************
 ************************************************************
@@ -22,7 +43,7 @@ $fontBody: 'Lato', serif;
   padding-bottom: 30px;
   .overlay-container {
     position: relative;
-    background-color: #4C4C4C;
+    background-color: $bgOverlay1;
     border-radius: 8px;
     img {
       width: 100%;
@@ -34,7 +55,7 @@ $fontBody: 'Lato', serif;
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: #222222;
+      background-color: $bgOverlay2;
       transition: .6s ease;
       opacity: 0;
       .slider {
@@ -60,13 +81,13 @@ $fontBody: 'Lato', serif;
               font-family: $fontBody;
               font-size: 4em;
               font-weight: 700;
-              color: #fff;
+              color: $colorPrimary;
             }
             p {
               font-family: $fontBody;
               font-size: 2.2em;
               font-weight: 400;
-              color: #fff;
+              color: $colorPrimary;
               i {
                 font-size: 2.5em;
                 margin-top: 18%;
@@ -79,14 +100,14 @@ $fontBody: 'Lato', serif;
                 font-family: $fontBody;
                 font-size: 2.2em;
                 font-weight: 400;
-                color: #fff;
+                color: $colorPrimary;
               }
             }
             a {
               font-size: 3em;
               font-weight: 400;
               text-decoration: none;
-              color: #fff;
+              color: $colorLinks1;
               button {
                 width: 50%;
                 margin: 15% auto 0% auto;
@@ -97,7 +118,7 @@ $fontBody: 'Lato', serif;
                   font-size: 1.2em;
                 }
                 &:hover {
-                  color: #337ab9;
+                  color: $colorLinks2;
                   i {
                     padding-left: 5px;
                   }
@@ -124,12 +145,12 @@ $fontBody: 'Lato', serif;
 /***********************************************************/
 body {
   position: relative;
-  background: #000;
-  color: #808080;
+  background: $colorSecondary;
+  color: $fontColorPrimary;
   font-family: $font;
   font-size: 62.5%;
   .navbar {
-    background-color: #000;
+    background-color: $colorSecondary;
     padding: 0% 1%;
     font-size: 3em;
     .container {
@@ -139,14 +160,14 @@ body {
       }
     }
     .navbar-nav a:hover {
-      color: #fff;
+      color: $colorLinks1;
     }
   }
   .title-area {
     padding: 0px;
     overflow: hidden;
     height: 100%;
-    background-image: url('../images/main2.png');
+    background-image: url('../images/hero.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -160,14 +181,14 @@ body {
         line-height: 1;
         font-size: 14em;
         font-weight: 900;
-        color: #fff;
+        color: $colorPrimary;
       }
       p {
         margin: 0% 0% 4% 0%;
         font-family: $fontBody;
         font-size: 8em;
         font-weight: 700;
-        color: #337ab7;
+        color: $colorTertiary;
         &:last-child {
           padding: 2% 0% 2% 0%;
           i {
@@ -193,7 +214,7 @@ body {
             text-align: center;
           }
           a {
-            color: #fff;
+            color: $colorLinks1;
           }
           &:hover {
             font-size: 6.8em;
@@ -205,7 +226,7 @@ body {
   .me-container {
     clear: both;
     overflow: auto;
-    background-color: #F5F5F5;
+    background-color: $bgColor3;
     text-align: center;
     line-height: 1.5;
     h2 {
@@ -226,7 +247,7 @@ body {
   .tech-container {
     clear: both;
     overflow: auto;
-    background-color: #FFF;
+    background-color: $bgColor1;
     text-align: center;
     h2 {
       margin: 100px auto 60px auto;
@@ -262,7 +283,7 @@ body {
   .work-container {
     clear: both;
     overflow: auto;
-    background-color: #363636;
+    background-color: $bgColor2;
     text-align: center;
     h2 {
       font-size: 7em;
@@ -288,7 +309,7 @@ body {
   .contact-container {
     clear: both;
     overflow: auto;
-    background-color: #F5F5F5;
+    background-color: $bgColor3;
     text-align: center;
     font-weight: 600;
     background-image: url('../images/me.png');
@@ -333,7 +354,7 @@ body {
         height: 80px;
       }
       .arrow-top a {
-        color: #fff;
+        color: $colorLinks1;
       }
       li {
         position: relative;
@@ -347,7 +368,7 @@ body {
           position: absolute;
           top: 30px;
           width: 100%;
-          color: #337AB7;
+          color: $colorTertiary;
           .init {
             height: 80px;
             width: 100%;
