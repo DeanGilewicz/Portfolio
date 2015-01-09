@@ -153,6 +153,7 @@ body {
     background-color: $colorSecondary;
     padding: 0% 1%;
     font-size: 3em;
+    border-bottom: 1px solid $colorTertiary;
     .container {
       width: 100%;
       .navbar-brand {
@@ -171,6 +172,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    border-bottom: 1px solid $colorTertiary;
     .name-container {
       width: 80%;
       margin: 0 auto;
@@ -224,6 +226,7 @@ body {
     }
   }
   .me-container {
+    border-bottom: 1px solid $colorTertiary;
     clear: both;
     overflow: auto;
     background-color: $bgColor3;
@@ -245,6 +248,7 @@ body {
     }
   }
   .tech-container {
+    border-bottom: 1px solid $colorTertiary;
     clear: both;
     overflow: auto;
     background-color: $bgColor1;
@@ -281,6 +285,7 @@ body {
     }
   }
   .work-container {
+    border-bottom: 1px solid $colorTertiary;
     clear: both;
     overflow: auto;
     background-color: $bgColor2;
@@ -340,6 +345,7 @@ body {
     }
   }
   .footer-container {
+    border-top: 1px solid $colorTertiary;
     clear: both;
     text-align: center;
     padding: 10px 0px;
