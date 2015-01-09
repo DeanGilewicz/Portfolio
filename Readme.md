@@ -1,10 +1,11 @@
-## Portfolio
+## Dean Gilewicz Portfolio
 
-My reposonsive designed portfolio site
+My responsive portfolio site
 
-Libraries
+Tech
 
-* JQuery
+* jQuery
+* Bootstrap
 * SASS
 * Normalize
 * Modernizr
