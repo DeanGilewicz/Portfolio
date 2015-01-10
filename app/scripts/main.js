@@ -46,7 +46,7 @@ $(function() {
 // position the slide in below effect at exact height to replace current content on hover
 $(function() {
   $(".wrap").hover(function() {
-    $(this).stop().animate({ top:"-60px" },{ queue:false, duration:200 });
+    $(this).stop().animate({ top:"-30px" },{ queue:false, duration:200 });
   }, function() {
     $(this).stop().animate({ top:"30px" },{ queue:false,duration:200 });
   });
