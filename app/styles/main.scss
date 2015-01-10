@@ -417,8 +417,12 @@ body {
 /***********************************************************/
 
 /* Extra small devices (phones, less than 768px) */
-@media screen and (max-width: 767px), any screen and (max-device-width: 767px) {
+@media screen and (max-width: 767px) {
+  .title-area {
 
+
+
+  }
   .name-container {
     h1 {
       font-size: 10em !important;
@@ -449,19 +453,5 @@ body {
     .project-six {
       padding: 10% !important;
     }
-
-}
-/* Small devices (tablets, 768px and up) */
-@media only screen and (min-device-width: 768px) and (max-device-width: 991px) {
-
-}
-
-/* Medium devices (desktops, 992px and up) */
-@media only screen and (min-device-width: 992px) and (max-device-width: 1199px) {
-
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media only screen and (min-device-width: 1200px) {
 
 }
