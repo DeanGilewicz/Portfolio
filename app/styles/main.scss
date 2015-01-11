@@ -325,7 +325,7 @@ body {
     height: 100%;
     background-color: $bgColor3;
     text-align: center;
-    background-image: url('../images/me.png');
+    background-image: url('../images/me2.png');
     background-repeat: no-repeat;
     // background-attachment: fixed; // change
     background-size: contain;
@@ -342,7 +342,7 @@ body {
       font-size: 1.8em; // change to 3.2em
       line-height: 1.5;
       &:last-child {
-        margin-bottom: 150px;
+        padding-bottom: 150px;
       }
     }
     .icons {
@@ -425,31 +425,48 @@ body {
 
 /***********************************************************/
 
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-
-
-// /* Landscape phones and smaller */
-// @media (max-width: 480px) {
-//
-// }
-
-/* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
+/* Extra small devices (phones, less than 767px) */
+@media (max-width: 767px) and (orientation: portrait) {
+  // No media query since this is the default in Bootstrap
 
 }
 
-/* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
+/* Extra small devices (phones, less than 767px) */
+@media (max-width: 767px) and (orientation: landscape) {
+  h1 {
+    margin: 20% auto 3% auto !important;
+  }
+  .tech-content {
+    img {
+      width: 50% !important;
+    }
+  }
+  .col-sm-4 {
+    width: 50%;
+  }
+  .project-one,
+  .project-two,
+  .project-three,
+  .project-four,
+  .project-five,
+  .project-six {
+    padding: 2% !important;
+  }
+}
+
+/* Tablet in landscape */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* STYLES GO HERE */
+}
+
+/* Tablet in portrait */
+@media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+  /* STYLES GO HERE */
 
 }
 
-/* Portrait tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
 
-}
-
-/* Large desktops and laptops */
+/* Laptops and Desktops  */
 @media (min-width: 1200px) {
  // remove finger icon from fa fa-hand-o-up from work
 }
