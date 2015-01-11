@@ -85,18 +85,18 @@ $bgOverlay2: #222222;
             overflow: auto;
             h5 {
               font-family: $fontBody;
-              font-size: 2em;
+              font-size: 2.5em;
               font-weight: 700;
               color: $colorPrimary;
             }
             p {
               font-family: $fontBody;
-              font-size: 1.3em;
+              font-size: 1.5em;
               font-weight: 400;
               color: $colorPrimary;
               i {
                 font-size: 2.5em;
-                margin-top: 18%;
+                margin-top: 20%;
               }
             }
             ul {
@@ -178,25 +178,27 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     border-bottom: 1px solid $colorTertiary;
+    padding-top: 30%;
+    padding-bottom: 5%;
     .name-container {
       width: 80%;
       margin: 0 auto;
       padding: 1% 0% 0% 0%;
       text-align: center;
       h1 {
-        margin: 30% auto 3% auto;
-        font-size: 5em;
+        margin: 0% auto 4% auto;
+        font-size: 5.5em;
         font-weight: 900;
         color: $colorPrimary;
       }
       p {
-        margin: 0% 0% 4% 0%;
+        margin: 0% 0% 6% 0%;
         font-family: $fontBody;
-        font-size: 3.5em;
+        font-size: 3.8em;
         font-weight: 700;
         color: $colorTertiary;
         &:last-child {
-          padding: 2% 0% 2% 0%;
+          padding: 6% 0% 2% 0%;
           i {
             font-size: 2.5em;
           }
@@ -236,18 +238,19 @@ body {
     border-bottom: 1px solid $colorTertiary;
     text-align: center;
     line-height: 1.5;
+    padding-top: 30%;
+    padding-bottom: 30%;
     h2 {
-      margin: 150px auto 40px auto;
+      margin: 0% auto 10% auto;
       font-size: 5em;
       font-weight: 600;
     }
     .me {
-      margin-bottom: 150px;
       p {
-        width: 60%;
+        width: 80%;
         margin: 0 auto;
         font-family: $fontBody;
-        font-size: 1.8em;
+        font-size: 2.5em;
       }
     }
   }
@@ -257,16 +260,17 @@ body {
     background-color: $bgColor1;
     border-bottom: 1px solid $colorTertiary;
     text-align: center;
+    padding-top: 30%;
+    padding-bottom: 30%;
     h2 {
-      margin: 100px auto 60px auto;
+      margin: 0% auto 10% auto;
       font-size: 5em;
       font-weight: 600;
     }
     .tech-content {
       position: relative;
-      margin-bottom: 150px;
       img {
-        width: 60%;
+        width: 70%;
       }
       .pic-overlay {
         position: absolute;
@@ -278,10 +282,10 @@ body {
         opacity: 0;
       }
       p {
-        width: 75%;
-        margin: 50px auto 0px auto;
+        width: 80%;
+        margin: 12% auto 0% auto;
         font-family: $fontBody;
-        font-size: 1.8em;
+        font-size: 2.5em;
       }
     }
     .skills:hover .pic-overlay {
@@ -294,17 +298,18 @@ body {
     background-color: $bgColor2;
     border-bottom: 1px solid $colorTertiary;
     text-align: center;
+    padding-top: 30%;
+    padding-bottom: 20%;
     h2 {
       font-size: 5em;
       font-weight: 600;
-      margin: 100px auto 70px auto;
+      margin: 0% auto 10% auto;
       padding: 20px 0px;
       border-top: 2px solid white;
       border-bottom: 2px solid white;
     }
     .work-content {
       overflow: auto;
-      margin-bottom: 70px;
       .project-one,
       .project-two,
       .project-three,
@@ -326,25 +331,24 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
+    padding-top: 30%;
+    padding-bottom: 30%;
     h2 {
       font-size: 5em;
       font-weight: 600;
-      margin: 150px auto 80px auto;
+      margin: 0% auto 10% auto;
     }
     p {
-      width: 60%;
+      width: 80%;
       margin: 0 auto;
       font-family: $fontBody;
-      font-size: 1.8em;
+      font-size: 2.5em;
       line-height: 1.5;
-      &:last-child {
-        padding-bottom: 150px;
-      }
     }
     .icons {
-      font-size: 3em;
+      font-size: 4em;
       i {
-        margin: 15px;
+        margin: 5%;
       }
     }
   }
@@ -352,7 +356,7 @@ body {
     clear: both;
     border-top: 1px solid $colorTertiary;
     text-align: center;
-    padding: 10px 0px;
+    padding: 4% 0%;
     ul {
       width: 100%;
       padding: 0px;
@@ -360,7 +364,7 @@ body {
       text-align: center;
       .arrow-top {
         font-size: 5em;
-        padding-bottom: 20px;
+        padding-bottom: 50px;
         height: 50px;
       }
       .arrow-top a {
@@ -371,8 +375,8 @@ body {
         overflow: hidden;
         list-style-type: none;
         display: inline-block;
-        margin: 0% 4% 0% 4%;
-        width: 11%;
+        margin: 0% 2% 0% 2%;
+        width: 15%;
         height: 60px;
         padding-bottom: 2%;
         .wrap {
@@ -383,7 +387,7 @@ body {
           .init {
             height: 50px;
             width: 100%;
-            font-size: 1.3em;
+            font-size: 1.8em;
           }
           .short {
             height: 50px;
@@ -423,7 +427,7 @@ body {
 
 /* Phone in portrait */
 @media (max-width: 767px) and (orientation: portrait) {
-  // No media query since this is the default in Bootstrap
+  // No media query since this is the default
 
 }
 
@@ -433,7 +437,26 @@ body {
     .title-area {
       .name-container {
         h1 {
-          margin: 15% auto 3% auto;
+          font-size: 10em;
+        }
+        p {
+          font-size: 6.5em;
+          font-weight: 700;
+          &:last-child {
+            i {
+              font-size: 2.5em;
+            }
+          }
+        }
+        ul {
+          li {
+            margin: 0% 8% 0% 8%;
+            font-size: 4em;
+            .fa {
+              height: 28px;
+              width: 28px;
+            }
+          }
         }
       }
     }
@@ -459,6 +482,24 @@ body {
         }
       }
     }
+    .footer-container {
+      ul {
+        .arrow-top {
+          font-size: 9em;
+          padding-bottom: 60px;
+        }
+        li {
+          .wrap {
+            .init {
+              font-size: 3em;
+            }
+            .short {
+              font-size: 5em;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -466,30 +507,28 @@ body {
 @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
   body {
     .title-area {
-      background-attachment: fixed;
-      background-size: contain;
+      padding-top: 20%;
+      padding-bottom: 5%;
       .name-container {
         h1 {
-          margin: 15% auto 3% auto;
-          font-size: 10em;
+          font-size: 13em;
         }
         p {
-          font-size: 6em;
+          font-size: 9em;
+          font-weight: 700;
           &:last-child {
             i {
-              font-size: 2.5em;
+              font-size: 3em;
             }
           }
         }
         ul {
           li {
-            font-size: 4.5em;
+            margin: 0% 7% 0% 7%;
+            font-size: 6em;
             .fa {
-              height: 33px;
-              width: 33px;
-            }
-            a:hover {
-              font-size: 5.5em;
+              height: 44px;
+              width: 44px;
             }
           }
         }
@@ -497,24 +536,24 @@ body {
     }
     .me-container {
       h2 {
-        font-size: 6em;
+        font-size: 9em;
       }
       .me {
         p {
-          font-size: 2.5em;
+          font-size: 5em;
         }
       }
     }
     .tech-container {
       h2 {
-        font-size: 6em;
+        font-size: 9em;
       }
       .tech-content {
         img {
-          width: 50%;
+          width: 70%;
         }
         p {
-          font-size: 2.5em;
+          font-size: 5em;
         }
       }
     }
@@ -523,7 +562,7 @@ body {
     }
     .work-container {
       h2 {
-        font-size: 6em;
+        font-size: 9em;
       }
       .work-content {
         .project-one,
@@ -538,32 +577,28 @@ body {
     }
     .contact-container {
       h2 {
-        font-size: 6em;
+        font-size: 9em;
       }
       p {
-        font-size: 2.5em;
+        font-size: 5em;
       }
       .icons {
-        font-size: 4em;
+        font-size: 7em;
       }
     }
     .footer-container {
       ul {
         .arrow-top {
-          font-size: 6.5em;
-          padding-bottom: 20px;
-          height: 50px;
-        }
-        .arrow-top a {
-          color: $colorLinks1;
+          font-size: 9em;
+          padding-bottom: 60px;
         }
         li {
           .wrap {
             .init {
-              font-size: 2.5em;
+              font-size: 3em;
             }
             .short {
-              font-size: 3.5em;
+              font-size: 5em;
             }
           }
         }
@@ -577,30 +612,27 @@ body {
 @media (min-width: 768px) and (max-width: 1027px) and (orientation: landscape) {
   body {
     .title-area {
-      background-attachment: fixed;
-      background-size: cover;
+      padding-top: 16%;
+      padding-bottom: 5%;
       .name-container {
         h1 {
-          margin: 10% auto 3% auto;
-          font-size: 13em;
+          font-size: 17em;
         }
         p {
-          font-size: 8em;
+          font-size: 11em;
           &:last-child {
             i {
-              font-size: 3em;
+              font-size: 2.5em;
             }
           }
         }
         ul {
           li {
-            font-size: 5em;
+            margin: 0% 8% 0% 8%;
+            font-size: 8em;
             .fa {
-              height: 44px;
-              width: 44px;
-            }
-            a:hover {
-              font-size: 1.4em;
+              height: 55px;
+              width: 55px;
             }
           }
         }
@@ -608,24 +640,24 @@ body {
     }
     .me-container {
       h2 {
-        font-size: 7em;
+        font-size: 11em;
       }
       .me {
         p {
-          font-size: 2.9em;
+          font-size: 6em;
         }
       }
     }
     .tech-container {
       h2 {
-        font-size: 7em;
+        font-size: 11em;
       }
       .tech-content {
         img {
           width: 60%;
         }
         p {
-          font-size: 2.9em;
+          font-size: 6em;
         }
       }
     }
@@ -634,7 +666,7 @@ body {
     }
     .work-container {
       h2 {
-        font-size: 7em;
+        font-size: 11em;
       }
       .work-content {
         .project-one,
@@ -649,32 +681,28 @@ body {
     }
     .contact-container {
       h2 {
-        font-size: 7em;
+        font-size: 11em;
       }
       p {
-        font-size: 2.9em;
+        font-size: 6em;
       }
       .icons {
-        font-size: 4.5em;
+        font-size: 9em;
       }
     }
     .footer-container {
       ul {
         .arrow-top {
-          font-size: 8em;
-          padding-bottom: 55px;
-          height: 50px; // change to 80px
-        }
-        .arrow-top a {
-          color: $colorLinks1;
+          font-size: 10em;
+          padding-bottom: 65px;
         }
         li {
           .wrap {
             .init {
-              font-size: 3em;
+              font-size: 3.5em;
             }
             .short {
-              font-size: 4.5em;
+              font-size: 5.5em;
             }
           }
         }
@@ -684,21 +712,22 @@ body {
 }
 
 
-
 /* Laptops and Desktops  */
 @media (min-width: 1024px) {
   body {
     .title-area {
       background-attachment: fixed;
-      background-size: cover;
+      padding-top: 0%;
+      padding-bottom: 0%;
       .name-container {
         h1 {
-          margin: 12% auto 3% auto;
-          font-size: 14em;
+          margin: 12% auto 4% auto;
+          font-size: 16em;
         }
         p {
-          font-size: 9em;
+          font-size: 10em;
           &:last-child {
+            padding: 4% 0% 2% 0%;
             i {
               font-size: 3em;
             }
@@ -706,13 +735,14 @@ body {
         }
         ul {
           li {
-            font-size: 6em;
+            margin: 0% 5% 0% 5%;
+            font-size: 6.2em;
             .fa {
-              height: 44px;
-              width: 44px;
+              height: 70px;
+              width: 70px;
             }
-            a:hover {
-              font-size: 1.8em;
+            &:hover {
+              font-size: 7em;
             }
           }
         }
@@ -720,33 +750,36 @@ body {
     }
     .me-container {
       h2 {
-        font-size: 9em;
+        font-size: 13em;
       }
       .me {
         p {
-          font-size: 3.5em;
+          font-size: 5em;
         }
       }
     }
     .tech-container {
       h2 {
-        font-size: 9em;
+        font-size: 13em;
       }
       .tech-content {
         img {
           width: 45%;
         }
         p {
-          font-size: 3.5em;
+          font-size: 5em;
         }
       }
     }
-    .col-sm-4 {
+    .col-sm-4,
+    .col-md-4 {
       width: 33.33%;
     }
     .work-container {
+      padding-top: 30%;
+      padding-bottom: 20%;
       h2 {
-        font-size: 9em;
+        font-size: 13em;
       }
       .work-content {
         .project-one,
@@ -757,25 +790,15 @@ body {
         .project-six {
           padding: 2%;
           .overlay-container {
-            position: relative;
-            background-color: $bgOverlay1;
-            border-radius: 8px;
-            padding-bottom: 5px;
-            img {
-              width: 100%;
-              padding: 10%;
-              border-radius: 8px;
-            }
             .touch {
-              font-size: 2em;
-              color: $colorPrimary;
+              display: none;
             }
             .overlay {
               .slider {
                 .carousel-inner {
                   .item {
                     h5 {
-                      font-size: 5em;
+                      font-size: 4.5em;
                     }
                     p {
                       font-size: 2.2em;
@@ -789,11 +812,11 @@ body {
                       }
                     }
                     a {
-                      font-size: 3em;
+                      font-size: 2.5em;
                       button {
                         width: 50%;
                         i {
-                          font-size: 1.2em;
+                          font-size: 1.3em;
                         }
                       }
                     }
@@ -802,41 +825,44 @@ body {
               }
             }
           }
-          .touch {
-            display: none;
-          }
         }
       }
     }
     .contact-container {
       background-attachment: fixed;
+      background-size: contain;
+      padding-top: 0%;
+      padding-bottom: 0%;
       h2 {
-        font-size: 9em;
+        margin: 30% auto 10% auto;
+        font-size: 13em;
       }
       p {
-        font-size: 3.5em;
+        font-size: 5em;
+        &:last-child {
+          margin-bottom: 30%;
+        }
       }
       .icons {
-        font-size: 5.5em;
+        font-size: 7em;
       }
     }
     .footer-container {
+      padding: 1% 0%;
       ul {
         padding-bottom: 20px;
         .arrow-top {
-          font-size: 8em;
-          padding-bottom: 55px;
-        }
-        .arrow-top a {
-          color: $colorLinks1;
+          font-size: 10em;
+          height: 70px;
         }
         li {
+          padding-bottom: 70px;
           .wrap {
             .init {
-              font-size: 3em;
+              font-size: 3.5em;
             }
             .short {
-              font-size: 4.5em;
+              font-size: 6em;
             }
           }
         }
