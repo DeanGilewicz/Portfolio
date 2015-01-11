@@ -20,7 +20,7 @@
 // on click performs a smooth page scroll to anchor on same page
 // set up for all a href links except the link for top
 $(function() {
-  $('a[href*=#]:not([href=#top]):not(.carousel-control)').click(function() {
+  $('a[href*=#]:not(.carousel-control)').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
       || location.hostname == this.hostname) {
         var target = $(this.hash);
