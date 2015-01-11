@@ -91,7 +91,7 @@ $bgOverlay2: #222222;
             }
             p {
               font-family: $fontBody;
-              font-size: 1.3em; // change 2.2em
+              font-size: 1.3em;
               font-weight: 400;
               color: $colorPrimary;
               i {
@@ -104,18 +104,18 @@ $bgOverlay2: #222222;
               li {
                 list-style-type: none;
                 font-family: $fontBody;
-                font-size: 1.3em; // change to 2.2em
+                font-size: 1.3em;
                 font-weight: 400;
                 color: $colorPrimary;
               }
             }
             a {
-              font-size: 1.5em; // change 3em
+              font-size: 1.5em;
               font-weight: 400;
               text-decoration: none;
               color: $colorLinks1;
               button {
-                width: 60%; // change to 50%
+                width: 60%;
                 margin: 15% auto 0% auto;
                 background-color: transparent;
                 border-radius: 5px;
@@ -324,11 +324,10 @@ body {
     text-align: center;
     background-image: url('../images/me2.png');
     background-repeat: no-repeat;
-    // background-attachment: fixed; // change
     background-size: contain;
     background-position: top;
     h2 {
-      font-size: 5em; // change to 7em
+      font-size: 5em;
       font-weight: 600;
       margin: 150px auto 80px auto;
     }
@@ -336,14 +335,14 @@ body {
       width: 60%;
       margin: 0 auto;
       font-family: $fontBody;
-      font-size: 1.8em; // change to 3.2em
+      font-size: 1.8em;
       line-height: 1.5;
       &:last-child {
         padding-bottom: 150px;
       }
     }
     .icons {
-      font-size: 3em; // change to 5em
+      font-size: 3em;
       i {
         margin: 15px;
       }
@@ -360,9 +359,9 @@ body {
       margin: 0px;
       text-align: center;
       .arrow-top {
-        font-size: 5em; // change to 8em
+        font-size: 5em;
         padding-bottom: 20px;
-        height: 50px; // change to 80px
+        height: 50px;
       }
       .arrow-top a {
         color: $colorLinks1;
@@ -374,7 +373,7 @@ body {
         display: inline-block;
         margin: 0% 4% 0% 4%;
         width: 11%;
-        height: 60px; // change to 80px
+        height: 60px;
         padding-bottom: 2%;
         .wrap {
           position: absolute;
@@ -382,14 +381,14 @@ body {
           width: 100%;
           color: $colorTertiary;
           .init {
-            height: 50px; // change to 80em
+            height: 50px;
             width: 100%;
-            font-size: 1.3em; // change to 2.5em
+            font-size: 1.3em;
           }
           .short {
-            height: 50px; // change to 80em
+            height: 50px;
             width: 100%;
-            font-size: 3em; // change to 4.5em
+            font-size: 3em;
           }
         }
       }
@@ -735,7 +734,7 @@ body {
       }
       .tech-content {
         img {
-          width: 50%;
+          width: 45%;
         }
         p {
           font-size: 3.5em;
@@ -757,6 +756,52 @@ body {
         .project-five,
         .project-six {
           padding: 2%;
+          .overlay-container {
+            position: relative;
+            background-color: $bgOverlay1;
+            border-radius: 8px;
+            padding-bottom: 5px;
+            img {
+              width: 100%;
+              padding: 10%;
+              border-radius: 8px;
+            }
+            .touch {
+              font-size: 2em;
+              color: $colorPrimary;
+            }
+            .overlay {
+              .slider {
+                .carousel-inner {
+                  .item {
+                    h5 {
+                      font-size: 5em;
+                    }
+                    p {
+                      font-size: 2.2em;
+                      i {
+                        font-size: 2.5em;
+                      }
+                    }
+                    ul {
+                      li {
+                        font-size: 2.2em;
+                      }
+                    }
+                    a {
+                      font-size: 3em;
+                      button {
+                        width: 50%;
+                        i {
+                          font-size: 1.2em;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
           .touch {
             display: none;
           }
@@ -764,6 +809,7 @@ body {
       }
     }
     .contact-container {
+      background-attachment: fixed;
       h2 {
         font-size: 9em;
       }
@@ -771,15 +817,15 @@ body {
         font-size: 3.5em;
       }
       .icons {
-        font-size: 4.5em;
+        font-size: 5.5em;
       }
     }
     .footer-container {
       ul {
+        padding-bottom: 20px;
         .arrow-top {
           font-size: 8em;
           padding-bottom: 55px;
-          height: 50px; // change to 80px
         }
         .arrow-top a {
           color: $colorLinks1;
