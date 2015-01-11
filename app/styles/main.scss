@@ -44,13 +44,13 @@ $bgOverlay2: #222222;
     position: relative;
     background-color: $bgOverlay1;
     border-radius: 8px;
-    padding-bottom: 5px; // remove when not 1 project per row
+    padding-bottom: 5px;
     img {
       width: 100%;
       padding: 10%;
       border-radius: 8px;
     }
-    .touch { // remove on laptop and larger
+    .touch {
       font-size: 2em;
       color: $colorPrimary;
     }
@@ -63,7 +63,7 @@ $bgOverlay2: #222222;
       background-color: $bgOverlay2;
       transition: .6s ease;
       opacity: 0;
-      padding-bottom: 5px; // remove when not 1 project per row
+      padding-bottom: 5px;
       .slider {
         padding: 0px;
         position: absolute;
@@ -85,7 +85,7 @@ $bgOverlay2: #222222;
             overflow: auto;
             h5 {
               font-family: $fontBody;
-              font-size: 2em; // change 4em
+              font-size: 2em;
               font-weight: 700;
               color: $colorPrimary;
             }
@@ -176,7 +176,6 @@ body {
     height: 100%;
     background-image: url('../images/hero.png');
     background-repeat: no-repeat;
-    // background-attachment: fixed; // change
     background-size: cover;
     border-bottom: 1px solid $colorTertiary;
     .name-container {
@@ -185,21 +184,21 @@ body {
       padding: 1% 0% 0% 0%;
       text-align: center;
       h1 {
-        margin: 30% auto 3% auto; // change 12% auto 3% auto
-        font-size: 5em; // change 14em
+        margin: 30% auto 3% auto;
+        font-size: 5em;
         font-weight: 900;
         color: $colorPrimary;
       }
       p {
         margin: 0% 0% 4% 0%;
         font-family: $fontBody;
-        font-size: 3.5em; // change 9em
+        font-size: 3.5em;
         font-weight: 700;
         color: $colorTertiary;
         &:last-child {
           padding: 2% 0% 2% 0%;
           i {
-            font-size: 2.5em; // change 2em
+            font-size: 2.5em;
           }
         }
       }
@@ -211,12 +210,12 @@ body {
         li {
           display: inline-block;
           margin: 0% 6% 0% 6%;
-          font-size: 3em; // change 6em
+          font-size: 3em;
           .fa {
             display: block;
             float: left;
-            height: 22px; // change 44px
-            width: 22px; // change 44px
+            height: 22px;
+            width: 22px;
             overflow: hidden;
             text-align: center;
           }
@@ -224,7 +223,7 @@ body {
             color: $colorLinks1;
           }
           &:hover {
-            font-size: 4em; // change 6.8
+            font-size: 4em;
           }
         }
       }
@@ -239,7 +238,7 @@ body {
     line-height: 1.5;
     h2 {
       margin: 150px auto 40px auto;
-      font-size: 5em; // change 7em
+      font-size: 5em;
       font-weight: 600;
     }
     .me {
@@ -248,7 +247,7 @@ body {
         width: 60%;
         margin: 0 auto;
         font-family: $fontBody;
-        font-size: 1.8em; // change 3.2em
+        font-size: 1.8em;
       }
     }
   }
@@ -260,14 +259,14 @@ body {
     text-align: center;
     h2 {
       margin: 100px auto 60px auto;
-      font-size: 5em; // change 7em
+      font-size: 5em;
       font-weight: 600;
     }
     .tech-content {
       position: relative;
       margin-bottom: 150px;
       img {
-        width: 60%; // change 80%
+        width: 60%;
       }
       .pic-overlay {
         position: absolute;
@@ -282,7 +281,7 @@ body {
         width: 75%;
         margin: 50px auto 0px auto;
         font-family: $fontBody;
-        font-size: 1.8em; //change 3.2
+        font-size: 1.8em;
       }
     }
     .skills:hover .pic-overlay {
@@ -296,7 +295,7 @@ body {
     border-bottom: 1px solid $colorTertiary;
     text-align: center;
     h2 {
-      font-size: 5em; // change 7em
+      font-size: 5em;
       font-weight: 600;
       margin: 100px auto 70px auto;
       padding: 20px 0px;
@@ -313,8 +312,6 @@ body {
       .project-five,
       .project-six {
         @include work;
-        // padding-top: 30px;
-        // padding-bottom: 30px;
       }
     }
   }
@@ -556,7 +553,7 @@ body {
         .arrow-top {
           font-size: 6.5em;
           padding-bottom: 20px;
-          height: 50px; // change to 80px
+          height: 50px;
         }
         .arrow-top a {
           color: $colorLinks1;
@@ -578,14 +575,226 @@ body {
 
 
 /* Tablet in landscape */
-@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
-  /* STYLES GO HERE */
+@media (min-width: 768px) and (max-width: 1027px) and (orientation: landscape) {
+  body {
+    .title-area {
+      background-attachment: fixed;
+      background-size: cover;
+      .name-container {
+        h1 {
+          margin: 10% auto 3% auto;
+          font-size: 13em;
+        }
+        p {
+          font-size: 8em;
+          &:last-child {
+            i {
+              font-size: 3em;
+            }
+          }
+        }
+        ul {
+          li {
+            font-size: 5em;
+            .fa {
+              height: 44px;
+              width: 44px;
+            }
+            a:hover {
+              font-size: 1.4em;
+            }
+          }
+        }
+      }
+    }
+    .me-container {
+      h2 {
+        font-size: 7em;
+      }
+      .me {
+        p {
+          font-size: 2.9em;
+        }
+      }
+    }
+    .tech-container {
+      h2 {
+        font-size: 7em;
+      }
+      .tech-content {
+        img {
+          width: 60%;
+        }
+        p {
+          font-size: 2.9em;
+        }
+      }
+    }
+    .col-sm-4 {
+      width: 50%;
+    }
+    .work-container {
+      h2 {
+        font-size: 7em;
+      }
+      .work-content {
+        .project-one,
+        .project-two,
+        .project-three,
+        .project-four,
+        .project-five,
+        .project-six {
+          padding: 2%;
+        }
+      }
+    }
+    .contact-container {
+      h2 {
+        font-size: 7em;
+      }
+      p {
+        font-size: 2.9em;
+      }
+      .icons {
+        font-size: 4.5em;
+      }
+    }
+    .footer-container {
+      ul {
+        .arrow-top {
+          font-size: 8em;
+          padding-bottom: 55px;
+          height: 50px; // change to 80px
+        }
+        .arrow-top a {
+          color: $colorLinks1;
+        }
+        li {
+          .wrap {
+            .init {
+              font-size: 3em;
+            }
+            .short {
+              font-size: 4.5em;
+            }
+          }
+        }
+      }
+    }
+  }
 }
-
 
 
 
 /* Laptops and Desktops  */
 @media (min-width: 1024px) {
- // remove finger icon from fa fa-hand-o-up from work
+  body {
+    .title-area {
+      background-attachment: fixed;
+      background-size: cover;
+      .name-container {
+        h1 {
+          margin: 12% auto 3% auto;
+          font-size: 14em;
+        }
+        p {
+          font-size: 9em;
+          &:last-child {
+            i {
+              font-size: 3em;
+            }
+          }
+        }
+        ul {
+          li {
+            font-size: 6em;
+            .fa {
+              height: 44px;
+              width: 44px;
+            }
+            a:hover {
+              font-size: 1.8em;
+            }
+          }
+        }
+      }
+    }
+    .me-container {
+      h2 {
+        font-size: 9em;
+      }
+      .me {
+        p {
+          font-size: 3.5em;
+        }
+      }
+    }
+    .tech-container {
+      h2 {
+        font-size: 9em;
+      }
+      .tech-content {
+        img {
+          width: 50%;
+        }
+        p {
+          font-size: 3.5em;
+        }
+      }
+    }
+    .col-sm-4 {
+      width: 33.33%;
+    }
+    .work-container {
+      h2 {
+        font-size: 9em;
+      }
+      .work-content {
+        .project-one,
+        .project-two,
+        .project-three,
+        .project-four,
+        .project-five,
+        .project-six {
+          padding: 2%;
+          .touch {
+            display: none;
+          }
+        }
+      }
+    }
+    .contact-container {
+      h2 {
+        font-size: 9em;
+      }
+      p {
+        font-size: 3.5em;
+      }
+      .icons {
+        font-size: 4.5em;
+      }
+    }
+    .footer-container {
+      ul {
+        .arrow-top {
+          font-size: 8em;
+          padding-bottom: 55px;
+          height: 50px; // change to 80px
+        }
+        .arrow-top a {
+          color: $colorLinks1;
+        }
+        li {
+          .wrap {
+            .init {
+              font-size: 3em;
+            }
+            .short {
+              font-size: 4.5em;
+            }
+          }
+        }
+      }
+    }
+  }
 }
