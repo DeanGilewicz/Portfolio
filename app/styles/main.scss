@@ -425,48 +425,167 @@ body {
 
 /***********************************************************/
 
-/* Extra small devices (phones, less than 767px) */
+/* Phone in portrait */
 @media (max-width: 767px) and (orientation: portrait) {
   // No media query since this is the default in Bootstrap
 
 }
 
-/* Extra small devices (phones, less than 767px) */
+/* Phone in landscape */
 @media (max-width: 767px) and (orientation: landscape) {
-  h1 {
-    margin: 20% auto 3% auto !important;
-  }
-  .tech-content {
-    img {
-      width: 50% !important;
+  body {
+    .title-area {
+      .name-container {
+        h1 {
+          margin: 15% auto 3% auto;
+        }
+      }
+    }
+    .tech-container {
+      .tech-content {
+        img {
+          width: 50%;
+        }
+      }
+    }
+    .col-sm-4 {
+      width: 50%;
+    }
+    .work-container {
+      .work-content {
+        .project-one,
+        .project-two,
+        .project-three,
+        .project-four,
+        .project-five,
+        .project-six {
+          padding: 2%;
+        }
+      }
     }
   }
-  .col-sm-4 {
-    width: 50%;
-  }
-  .project-one,
-  .project-two,
-  .project-three,
-  .project-four,
-  .project-five,
-  .project-six {
-    padding: 2% !important;
-  }
-}
-
-/* Tablet in landscape */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  /* STYLES GO HERE */
 }
 
 /* Tablet in portrait */
 @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
-  /* STYLES GO HERE */
-
+  body {
+    .title-area {
+      background-attachment: fixed;
+      background-size: contain;
+      .name-container {
+        h1 {
+          margin: 15% auto 3% auto;
+          font-size: 10em;
+        }
+        p {
+          font-size: 6em;
+          &:last-child {
+            i {
+              font-size: 2.5em;
+            }
+          }
+        }
+        ul {
+          li {
+            font-size: 4.5em;
+            .fa {
+              height: 33px;
+              width: 33px;
+            }
+            a:hover {
+              font-size: 5.5em;
+            }
+          }
+        }
+      }
+    }
+    .me-container {
+      h2 {
+        font-size: 6em;
+      }
+      .me {
+        p {
+          font-size: 2.5em;
+        }
+      }
+    }
+    .tech-container {
+      h2 {
+        font-size: 6em;
+      }
+      .tech-content {
+        img {
+          width: 50%;
+        }
+        p {
+          font-size: 2.5em;
+        }
+      }
+    }
+    .col-sm-4 {
+      width: 50%;
+    }
+    .work-container {
+      h2 {
+        font-size: 6em;
+      }
+      .work-content {
+        .project-one,
+        .project-two,
+        .project-three,
+        .project-four,
+        .project-five,
+        .project-six {
+          padding: 2%;
+        }
+      }
+    }
+    .contact-container {
+      h2 {
+        font-size: 6em;
+      }
+      p {
+        font-size: 2.5em;
+      }
+      .icons {
+        font-size: 4em;
+      }
+    }
+    .footer-container {
+      ul {
+        .arrow-top {
+          font-size: 6.5em;
+          padding-bottom: 20px;
+          height: 50px; // change to 80px
+        }
+        .arrow-top a {
+          color: $colorLinks1;
+        }
+        li {
+          .wrap {
+            .init {
+              font-size: 2.5em;
+            }
+            .short {
+              font-size: 3.5em;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 
+/* Tablet in landscape */
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) {
+  /* STYLES GO HERE */
+}
+
+
+
+
 /* Laptops and Desktops  */
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
  // remove finger icon from fa fa-hand-o-up from work
 }
