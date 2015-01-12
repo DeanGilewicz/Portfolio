@@ -435,6 +435,7 @@ body {
 @media (max-width: 767px) and (orientation: landscape) {
   body {
     .title-area {
+      padding-top: 20%;
       .name-container {
         h1 {
           font-size: 10em;
@@ -460,7 +461,13 @@ body {
         }
       }
     }
+    .me-container {
+      padding-top: 15%;
+      padding-bottom: 15%;
+    }
     .tech-container {
+      padding-top: 15%;
+      padding-bottom: 15%;
       .tech-content {
         img {
           width: 50%;
@@ -471,6 +478,8 @@ body {
       width: 50%;
     }
     .work-container {
+      padding-top: 15%;
+      padding-bottom: 15%;
       .work-content {
         .project-one,
         .project-two,
@@ -481,6 +490,10 @@ body {
           padding: 2%;
         }
       }
+    }
+    .contact-container {
+      padding-top: 15%;
+      padding-bottom: 15%;
     }
     .footer-container {
       ul {
@@ -721,13 +734,13 @@ body {
       padding-bottom: 0%;
       .name-container {
         h1 {
-          margin: 11% auto 4% auto;
+          margin: 12% auto 4% auto;
           font-size: 16em;
         }
         p {
           font-size: 10em;
           &:last-child {
-            padding: 3% 0% 1% 0%;
+            padding: 1% 0% 1% 0%;
             i {
               font-size: 3em;
             }
