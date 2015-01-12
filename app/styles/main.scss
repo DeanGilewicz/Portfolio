@@ -721,13 +721,13 @@ body {
       padding-bottom: 0%;
       .name-container {
         h1 {
-          margin: 12% auto 4% auto;
+          margin: 11% auto 4% auto;
           font-size: 16em;
         }
         p {
           font-size: 10em;
           &:last-child {
-            padding: 4% 0% 2% 0%;
+            padding: 3% 0% 1% 0%;
             i {
               font-size: 3em;
             }
@@ -749,8 +749,12 @@ body {
       }
     }
     .me-container {
+      padding-top: 15%;
+      padding-bottom: 15%;
       h2 {
         font-size: 13em;
+        margin: 0% auto 8% auto;
+
       }
       .me {
         p {
@@ -759,8 +763,11 @@ body {
       }
     }
     .tech-container {
+      padding-top: 15%;
+      padding-bottom: 15%;
       h2 {
         font-size: 13em;
+        margin: 0% auto 9% auto;
       }
       .tech-content {
         img {
@@ -768,6 +775,7 @@ body {
         }
         p {
           font-size: 5em;
+          margin: 9% auto 0% auto;
         }
       }
     }
@@ -776,8 +784,8 @@ body {
       width: 33.33%;
     }
     .work-container {
-      padding-top: 30%;
-      padding-bottom: 20%;
+      padding-top: 15%;
+      padding-bottom: 15%;
       h2 {
         font-size: 13em;
       }
@@ -834,13 +842,13 @@ body {
       padding-top: 0%;
       padding-bottom: 0%;
       h2 {
-        margin: 30% auto 10% auto;
+        margin: 15% auto 8% auto;
         font-size: 13em;
       }
       p {
         font-size: 5em;
         &:last-child {
-          margin-bottom: 30%;
+          margin-bottom: 15%;
         }
       }
       .icons {
